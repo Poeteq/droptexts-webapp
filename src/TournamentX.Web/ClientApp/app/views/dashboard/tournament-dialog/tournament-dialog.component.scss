@@ -1,0 +1,71 @@
+@import 'tom';
+
+.tournament-dialog {
+
+    .mat-dialog-container {
+        padding: 2px !important;
+        border-radius: 1rem !important;
+        overflow: initial;
+    }
+
+    .tournament-dialog-toolbar {
+        // background-color: #05527f;
+        // color: white;
+        border-bottom: solid 1px lightgray;
+    }
+
+    .mat-dialog-container {
+        padding: 0;
+    }
+}
+
+.tile {
+    position: relative;
+    margin: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 150px;
+    height: 150px;
+    padding: 20px 10px;
+
+    &:hover {
+        @include mat-elevation(5);
+        cursor: pointer;
+    }
+    
+    .tile-icon {
+        position: absolute;
+        top: 0;
+        margin: 30px 0px 20px 0px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        font-size: 40px;
+    }
+    
+    .tile-title {
+        // position: absolute;
+        // bottom: 0;
+        margin-top: 48px;
+        font-size: 18px;
+        text-align: center;
+        // word-wrap: normal;
+        // text-align: center;
+    }
+}
+
+.clicked {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #0dc36a;
+}
+
+.event-dialog {
+    position: fixed;
+    top: 0;
+}
+
+.event-dialog-button {
+    background-color: #05527f;
+    color: white;
+}

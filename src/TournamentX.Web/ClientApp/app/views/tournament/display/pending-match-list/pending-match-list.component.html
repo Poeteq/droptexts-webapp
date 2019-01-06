@@ -1,0 +1,36 @@
+<div class="example-container mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource">
+
+        <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="handle">
+            <mat-header-cell *matHeaderCellDef> HANDLE </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <strong> {{element.player1?.name || element.player2?.name }} </strong>
+            </mat-cell>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="opponent">
+            <mat-header-cell *matHeaderCellDef> OPPONENT </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.player1?.name && element.player2?.name || 'Waiting...'}} </mat-cell>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="predictedStartTime">
+            <mat-header-cell *matHeaderCellDef> CALL TIME </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.predictedStartTime | date:'shortTime'}} </mat-cell>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="round">
+            <mat-header-cell *matHeaderCellDef> ROUND # </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.round}} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+</div>

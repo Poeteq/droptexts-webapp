@@ -1,0 +1,42 @@
+@import 'tom';
+
+:host {
+
+    .nav-link {
+        padding: 0 12px !important;
+    }
+
+    // .text-button {
+    //     @include media-breakpoint('lt-sm') {
+    //         display: none;
+    //     }
+    // }
+
+    // .icon-button {
+    //     @include media-breakpoint('gt-xs') {
+    //         display: none;
+    //     }
+    // }
+
+    .btn-colored-tx {
+        background-color: $tx-bluedark;
+        color: white;
+    
+        &:hover {
+            background-color: #0778ba;
+            transform: translateY(-1px);
+            box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+        }
+      }
+    
+      .btn-outline-tx {
+        background-color: white;
+        color: $tx-bluedark;
+    
+        &:hover {
+            color: #0778ba;
+            transform: translateY(-1px);
+            box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+        }
+      }
+}

@@ -1,0 +1,21 @@
+<div id="container" style="font-size:12px;margin:24px 0 0 12px;">
+    <svg #svg [attr.width]="width" [attr.height]="height">
+        <!-- <svg #svg [attr.preserveAspectRatio]="'xMinYMin meet'" [attr.viewBox]="viewBox"> -->
+        <g>
+            <g [attr.transform]="svgTranslation">
+                <svg:path *ngFor="let link of links" [attr.d]="linkPath(link)" />
+                <g *ngFor="let node of nodes; let i = index" [attr.transform]="nodeTranslation(node)">
+                    <svg:rect height="30" width="150" id="rec1" rx="2" ry="2" (click)=onNodeClick(node,1) />
+                    <svg:rect y="30" height="30" width="150" rx="2" ry="2" id="rec2" (click)=onNodeClick(node,2) />
+                    <svg: line y1="30" x2="150" y2="30" />
+                    <svg: line x1="120" x2="120" y2="60" />
+                    <svg:text x="-10" y="-5" id="match{{i}}-number">{{node.data.matchNumber}}</svg:text>
+                    <svg:text x="10" y="20" id="match{{i}}-name1">{{ trimText(node.data.player1.name, 18)}}</svg:text>
+                    <svg:text x="10" y="50" id="match{{i}}-name2">{{ trimText(node.data.player2.name, 18)}}</svg:text>
+                    <!-- <svg:text x="130" y="20">{{node.data.ascore}}</svg:text> -->
+                    <!-- <svg:text x="130" y="50">{{node.data.bscore}}</svg:text> -->
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>

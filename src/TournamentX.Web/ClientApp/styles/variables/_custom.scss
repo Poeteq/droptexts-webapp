@@ -1,0 +1,151 @@
+$tx-bluedark: #05527f;
+
+.round {
+    border-radius: 10em;
+}
+
+.round-edges {
+    border-radius: .85em;
+}
+
+.square {
+    border-radius: 4px;
+}
+
+.tx-gray-bg {
+    background-color: #edefed;
+    color: #484848;
+}
+
+.tx-black-bg {
+    background-color: black;
+    color: white;
+}
+
+.tx-accent-bg {
+    background-color: $tx-bluedark;
+    color: #FFF;
+}
+
+.tx-accent-fg {
+    color: $tx-bluedark;
+}
+
+.white-fg {
+    color: white;
+}
+
+.btn-tx-bg {
+    color: white;
+    background-color: $tx-bluedark;
+    &:hover {background-color: #0778ba;}
+  }
+
+  .btn-tx-fg {
+    color: $tx-bluedark;
+    &:hover { color: #0778ba; }
+  }
+
+  .btn-tx-fg:hover, .btn-tx-bg:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
+
+  .tx-color-secondary {
+      color: rgba(0,0,0,.654)!important;
+  }
+
+
+  .btn-primary-tx {
+    background: #05527f;
+    color: rgb(243, 243, 243);
+
+    &:hover {
+        color: white;
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+
+.btn-inverse-tx {
+    background: rgb(243, 243, 243);
+    color: #05527f;
+
+    &:hover {
+        color: #05527fc0;
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+
+.base-button {
+    cursor: pointer;
+    height: 54px;
+    border-radius: .5rem;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; 
+
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    }
+}
+
+.base-button:disabled {
+    cursor: default !important;
+    opacity: 0.2;
+}
+
+.confirm-button {
+    color: white;
+    background-color: green;
+}
+
+.cancel-button {
+    color: black;
+    background-color: #FAFAFA;
+}
+
+.reset-button {
+    color: white;
+    background-color: darkred;
+}
+
+@mixin md-icon-size($size: 24px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+    line-height: $size/2;
+  }
+
+  .draggable {
+    cursor: move; /* fallback: no `url()` support or images disabled */
+    cursor: -webkit-grab; /* Chrome 1-21, Safari 4+ */
+    cursor:    -moz-grab; /* Firefox 1.5-26 */
+    cursor:         grab; /* W3C standards syntax, should come least */
+}
+.draggable:active {
+    cursor: -webkit-grabbing;
+    cursor:    -moz-grabbing;
+    cursor:         grabbing;
+}

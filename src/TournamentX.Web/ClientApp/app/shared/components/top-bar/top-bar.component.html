@@ -1,0 +1,39 @@
+<mat-toolbar class="p-0 mat-elevation-z1">
+
+    <div style="display: flex; flex: 1; flex-direction:row;">
+
+        <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center">
+            <div class="logo ml-12 mr-12">
+                <img class="logo-icon" (click)="goToDashboard()" src="./../../../assets/logos/tournamentx.png">
+            </div>
+        </div>
+
+        <div fxFlex="0 1 auto" class="ml-auto" fxLayout="row" fxLayoutAlign="start center">
+
+            <button mat-button [matMenuTriggerFor]="userMenu" class="user-button">
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <span *ngIf="tournamentName" class="username mr-12" fxHide fxShow.gt-sm>{{ tournamentName }}<span *ngIf="bracketName">: {{bracketName}}</span></span>
+                    <span *ngIf="!tournamentName" class="username mr-12" fxHide fxShow.gt-sm>My Account</span>
+                    <mat-icon class="s-16" fxHide.xs>keyboard_arrow_down</mat-icon>
+                </div>
+            </button>
+
+            <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+
+                <button *ngFor="let bracket of brackets" mat-menu-item class="" (click)="goToBracket(bracket.bracketId)">
+                    <mat-icon class="flipped">web</mat-icon>
+                    <span>{{ bracket.name }}</span>
+                </button>
+
+                <button mat-menu-item class="" (click)="logout()">
+                    <mat-icon>exit_to_app</mat-icon>
+                    <span>Logout</span>
+                </button>
+
+            </mat-menu>
+            
+        </div>
+
+    </div>
+
+</mat-toolbar>

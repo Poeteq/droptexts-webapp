@@ -1,0 +1,108 @@
+<mat-toolbar class="tx-accent-bg" style="background-color:transparent;" [@animate]="{value:'*',params:{delay:'200ms',x:'50px'}}">
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxFlex>
+        <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center">
+        </div>
+        <div fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
+
+            <button mat-raised-button class="bracket-state-button btn-outline-tx singles" *ngIf="style === 1"
+                [matMenuTriggerFor]="bracketMenu" aria-label="UNLOCK">
+
+                <span fxHide.lt-md>Singles</span>
+                <mat-icon fxHide.gt-sm>more_vert</mat-icon>
+
+            </button>
+
+            <button mat-raised-button class="bracket-state-button btn-colored-tx" *ngIf="style === 2"
+                [matMenuTriggerFor]="bracketMenu" aria-label="UNLOCK">
+
+                <!-- <span *ngIf="state === 'display'" fxHide.lt-md>Dashboard</span> -->
+                <span *ngIf="state === BracketState.Winners" fxHide.lt-md>Winners</span>
+                <span *ngIf="state === BracketState.Losers" fxHide.lt-md>Losers</span>
+                <!-- <span *ngIf="state === BracketState.Finals" fxHide.lt-md>Finals</span> -->
+
+                <!-- <span *ngIf="state === 'display'" fxHide.gt-sm>D</span> -->
+                <span *ngIf="state === BracketState.Winners" fxHide.gt-sm>W</span>
+                <span *ngIf="state === BracketState.Losers" fxHide.gt-sm>L</span>
+                <!-- <span *ngIf="state === BracketState.Finals" fxHide.gt-sm>F</span> -->
+
+                <mat-icon class="s-16">keyboard_arrow_down</mat-icon>
+            </button>
+
+            <mat-menu #bracketMenu="matMenu" xPosition="before" [overlapTrigger]="false">
+
+                <button (click)="showBracket('winners')" mat-menu-item *ngIf="style == 2">
+                    <span>Winners</span>
+                </button>
+
+                <button mat-menu-item class="red" (click)="showBracket('losers')" *ngIf="style == 2">
+                    <span>Losers</span>
+                </button>
+                <!-- 
+                <button mat-menu-item class="red" (click)="showBracket('finals')" *ngIf="style == 2">
+                    <span>Finals</span>
+                </button> -->
+
+                <!-- <button mat-menu-item class="" (click)="showLogsDialog()" fxHide.gt-sm>
+                    <mat-icon>list_alt</mat-icon>
+                    <span>Logs</span>
+                </button> -->
+
+                <button mat-menu-item (click)="showSettingsDialog()" fxHide.gt-sm>
+                    <mat-icon>settings</mat-icon>
+                    <span>Settings</span>
+                </button>
+
+                <button mat-menu-item *ngIf="true" (click)="showAddUsersDialog()" fxHide.gt-sm>
+                    <mat-icon>person_add</mat-icon>
+                    <span>Add User</span>
+                </button>
+
+                <button mat-menu-item class="red" (click)="showDashboard()" *ngIf="style == 2" fxHide.gt-sm>
+                    <mat-icon>web</mat-icon>
+                    <span>Dashboard</span>
+                </button>
+                <!-- 
+                <button mat-menu-item class="red" (mousedown)="mousedown()" (mouseup)="mouseup()" (mouseleave)="mouseup()"
+                    fxHide.gt-sm>
+                    <mat-icon>replay</mat-icon>
+                    <span>Hard Reset</span>
+                </button> -->
+
+            </mat-menu>
+            <button mat-icon-button class="menu-icon-button player-swap-button btn-outline-tx text-button mr-2 mat-elevation-z2"
+                [matMenuTriggerFor]="playerMenu" fxHide.lt-md>
+                <mat-icon>more_vert</mat-icon>
+            </button>
+
+            <mat-menu #playerMenu="matMenu" [overlapTrigger]="false">
+
+                <button mat-menu-item class="red" (click)="showDashboard()">
+                    <mat-icon>web</mat-icon>
+                    <span>Dashboard</span>
+                </button>
+
+                <!-- <button mat-menu-item class="" (click)="showLogsDialog()">
+                    <mat-icon>list_alt</mat-icon>
+                    <span>Logs</span>
+                </button> -->
+
+                <button mat-menu-item *ngIf="true" (click)="showAddUsersDialog()">
+                    <mat-icon>person_add</mat-icon>
+                    <span>Add User</span>
+                </button>
+
+                <button mat-menu-item *ngIf="true" (click)="showSettingsDialog()">
+                    <mat-icon>settings</mat-icon>
+                    <span>Settings</span>
+                </button>
+
+                <!-- <button mat-menu-item class="red" (mousedown)="mousedown()" (mouseup)="mouseup()" (mouseleave)="mouseup()">
+                    <mat-icon>replay</mat-icon>
+                    <span>Hard Reset</span>
+                </button> -->
+
+            </mat-menu>
+
+        </div>
+    </div>
+</mat-toolbar>

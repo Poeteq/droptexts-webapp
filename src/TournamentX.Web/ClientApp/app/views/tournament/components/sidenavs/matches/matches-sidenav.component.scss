@@ -1,0 +1,71 @@
+@import 'tom';
+:host {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .sidenav-header {
+        mat-toolbar {
+            border-bottom: 1px solid rgba(0, 0, 0, .08);
+            .avatar-wrapper {
+                .avatar,
+                .status {
+                    cursor: pointer;
+                }
+            }
+
+            .real-search {
+              height: 36px;
+              line-height: 36px;
+              padding: 8px;
+              background: #FFFFFF;
+              font-size: 13px;
+              @include mat-elevation(1);
+            }
+            
+            .search {
+                // height: 36px;
+                line-height: 36px; // padding: 8px;
+                background: #FFFFFF;
+                font-size: 13px;
+                @include mat-elevation(1);
+                .cursor-pointer {
+                    cursor: pointer;
+                }
+                .state-button {
+                    border-right: 1px solid rgba(0, 0, 0, .08);
+                }
+                .active-tab {
+                    color: rgb(199, 90, 0);
+                    border-bottom: 4px solid rgb(199, 90, 0);
+                }
+                .icon {
+                    margin: 0;
+                    color: rgba(0, 0, 0, 0.54);
+                }
+                input {
+                    padding-left: 12px;
+                    height: 36px;
+                    color: rgba(0, 0, 0, 0.54);
+                    border: none;
+                }
+            }
+            .add-button {
+                margin: 8px;
+            }
+        }
+    }
+    .sidenav-content {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        overflow-y: overlay; //todo fix
+        // margin-bottom: 65px;
+    }
+}

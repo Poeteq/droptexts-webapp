@@ -1,0 +1,22 @@
+<div *ngIf="state === 'live'" class="match-list-container">
+    <ng-container *ngFor="let match of cachedMatches | filter: searchText">
+        <tom-match-live *ngIf="match.stateName == 'Ready' || match.stateName == 'Live'" [match]="match" [bracketId]="bracketId"
+            (loading)="onLoading($event)"> <!--  [@animate]="{value:'*',params:{delay:'200ms',x:'-50px'}}" -->
+        </tom-match-live>
+    </ng-container>
+</div>
+
+<div *ngIf="state === 'pending'" class="match-list-container">
+    <ng-container *ngFor="let match of cachedMatches | filter: 'awaiting'  | filter: searchText ">
+        <tom-match-pending *ngIf="match.stateName == 'Awaiting' && !(match.player1 === undefined && match.player2 === undefined)"
+            [match]="match" [@animate]="{value:'*',params:{delay:'200ms',x:'-50px'}}">
+        </tom-match-pending>
+    </ng-container>
+</div>
+
+<div *ngIf="state === 'complete'" class="match-list-container">
+    <ng-container *ngFor="let match of cachedMatches.reverse() | filter: 'Complete' | filter: searchText">
+        <tom-match-completed *ngIf="match.player1 !== undefined && match.player2 !== undefined" [match]="match"
+            [bracketId]="bracketId" [@animate]="{value:'*',params:{delay:'200ms',x:'-50px'}}"></tom-match-completed>
+    </ng-container>
+</div>

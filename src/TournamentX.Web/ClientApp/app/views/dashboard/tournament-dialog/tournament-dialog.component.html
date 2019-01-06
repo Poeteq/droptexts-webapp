@@ -1,0 +1,75 @@
+<div class="tournament-dialog-header">
+    <mat-toolbar class="tournament-dialog-toolbar">
+        <div fxFlex fxLayout="row" fxLayoutAlign="space-between center">
+            <span class="title dialog-title">New Tournament</span>
+            <button mat-button class="mat-icon-button" (click)="dialogRef.close()">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+    </mat-toolbar>
+</div>
+
+<div mat-dialog-content>
+    
+    <mat-vertical-stepper linear>
+
+        <mat-step [completed]="selectedType !== TournamentType.None">
+            <ng-template matStepLabel>What kind of tournament?</ng-template>
+            <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutWrap>
+                <div class="tile" fxLayout="column" fxLayoutAlign="space-around center" [ngClass]="{'clicked' : selectedType === TournamentType.Single}"
+                  (click)="selectType(TournamentType.Single)">
+                  <mat-icon class="tile-icon">games</mat-icon>
+                  <div class="tile-title">
+                      Single Elimination
+                  </div>
+              </div>
+                <div class="tile" fxLayout="column" fxLayoutAlign="space-around center" [ngClass]="{'clicked' : selectedType === TournamentType.Double}"
+                    (click)="selectType(TournamentType.Double)">
+                    <mat-icon class="tile-icon">ballot</mat-icon>
+                    <div class="tile-title">
+                        Double Elimination
+                    </div>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <button mat-raised-button class="event-dialog-button square" matStepperNext [disabled]="selectedType === TournamentType.None"
+                    [style.margin.px]="10">Next</button>
+            </div>
+        </mat-step>
+
+        <mat-step [completed]="true">
+            <ng-template matStepLabel>How many stations?</ng-template>
+            <div fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutWrap>
+
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <mat-form-field appearance="outline" fxFlex>
+                        <mat-label>Stations</mat-label>
+                        <input name="numberOfStations" [(ngModel)]="numberOfStations" matInput required>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <button mat-raised-button class="event-dialog-button square" matStepperNext [style.margin.px]="10">
+                    Next
+                </button>
+            </div>
+        </mat-step>
+
+        <mat-step>
+            <ng-template matStepLabel>Tournament details</ng-template>
+            <form [formGroup]="tournamentForm" [hidden]="selectedType === TournamentType.None">
+                <mat-form-field class="w-100-p">
+                    <input matInput name="name" formControlName="tournamentName" placeholder="Name" required>
+                    <mat-error *ngIf="tournamentForm.controls.tournamentName.invalid">
+                        Tournament name is required
+                    </mat-error>
+                </mat-form-field>
+            </form>
+            <button mat-raised-button class="event-dialog-button square" (click)="createTournament(tournamentForm.value)"
+                [disabled]="tournamentForm.invalid" aria-label="SAVE" [style.margin.px]="10">
+                Save
+            </button>
+        </mat-step>
+
+    </mat-vertical-stepper>
+</div>

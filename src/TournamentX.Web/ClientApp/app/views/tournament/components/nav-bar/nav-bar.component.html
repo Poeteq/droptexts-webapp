@@ -1,0 +1,15 @@
+<mat-toolbar class="tx-accent-bg" [@animate]="{value:'*',params:{delay:'200ms',y:'-50px'}}">
+
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign.gt-xs="start center" fxFlex>
+
+        <div *ngIf="true" fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center">
+
+            <button mat-raised-button class="player-swap-button btn-outline-tx text-button" (click)="showLaunchDialog()"
+                aria-label="Launch">
+                Launch
+            </button>
+        </div>
+
+    </div>
+
+</mat-toolbar>

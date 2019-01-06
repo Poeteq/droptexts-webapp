@@ -1,0 +1,13 @@
+@import 'tom';
+
+tom-tournament-match-list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .match-list-container {
+        flex: 1;
+        flex-direction: column;
+        padding-bottom: 64px;
+    }
+}

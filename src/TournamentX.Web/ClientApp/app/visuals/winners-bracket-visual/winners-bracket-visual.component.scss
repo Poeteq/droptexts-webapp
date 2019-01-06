@@ -1,0 +1,107 @@
+@import 'tom';
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+
+.table {
+    position: absolute;
+    background-color: #FEEBEE;
+   	padding: 5px 7px 3px;
+    line-height: 2;
+    min-width: 185px;
+    box-shadow: 0px 2px 2px 1px rgba(34, 34, 34, 0.1);
+    color: #222222;
+    border: 0px solid rgba(34, 34, 34, 0.1);
+}
+
+// #rec1:hover,#rec2:hover {
+//   fill: $tx-bluedark;
+//   opacity: 1;
+// }
+
+#rec1 {
+  stroke:  $tx-bluedark;
+  stroke-width: .175em;
+  fill: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#rec2 {
+  stroke:  $tx-bluedark;
+  stroke-width: .175em;
+  fill: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#text1:hover, #text2:hover {
+fill: white;
+}
+
+text
+{
+  pointer-events: none;
+}
+
+path {
+  fill: none;
+  stroke: #a0a0a0;
+  stroke-width: .175em;
+}
+
+.white-text {
+  fill: white !important;
+}
+
+.gray-text {
+  fill: gray;
+}
+
+.highlight {
+  fill:  $tx-bluedark !important;
+  color: white;
+  font-size: 20px;
+  // stroke: white;
+}
+
+.faded {
+  fill:  lightgrey !important;
+  // color: grey;
+  // font-size: 20px;
+}
+
+
+.colorred {
+  fill:  #f44336 !important;
+  color: white;
+  font-size: 20px;
+  // stroke: white;
+}
+
+.glow {
+  stroke: #f44336 !important;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.greencolor {
+  fill: green;
+}
+
+.font-thin {
+  font-weight: 500;
+}
+
+.player-text {
+  text-overflow: ellipsis;
+}

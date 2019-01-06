@@ -1,0 +1,17 @@
+<div class="step-navigation" [@animate]="{value:'*',params:{delay:'200ms',x:'50px'}}">
+
+    <div id="full-screen-toggle">
+
+        <button mat-icon-button *ngIf="!fullscreen" class="next player-swap-button btn-outline-tx text-button mr-2 mat-elevation-z2"
+            (click)="toggleSidenav()">
+            <mat-icon>fullscreen</mat-icon>
+        </button>
+
+        <button mat-icon-button *ngIf="fullscreen" class="next player-swap-button btn-outline-tx text-button mr-2 mat-elevation-z2"
+            (click)="toggleSidenav()">
+            <mat-icon>fullscreen_exit</mat-icon>
+        </button>
+        
+    </div>
+    
+</div>

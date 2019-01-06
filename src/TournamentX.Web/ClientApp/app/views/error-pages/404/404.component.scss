@@ -1,0 +1,93 @@
+@import "tom";
+
+tom-error-pages-404 {
+    display: flex;
+    flex: 1
+}
+
+:host {
+    display: flex;
+    flex: 1;
+    
+    #404 {
+        width: 100%;
+        background-color: #fff;
+        background-image: url(../../../../assets/backgrounds/dotted-map.png);
+        /* fallback */
+        background-image: url(../../../../assets/backgrounds/dotted-map.png), linear-gradient(rgba(1, 20, 31, 1), rgba(5, 82, 127, 1));
+        background-size: contain;
+        background-position: center center; // // background: url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat;
+        // background-size: cover;
+        #404-form-wrapper {
+            flex: 1 0 auto;
+            padding: 32px;
+            @include media-breakpoint('xs') {
+                padding: 16px;
+            }
+            #404-form {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                max-width: 420px;
+                padding: 48px 32px 32px 32px;
+                @include mat-elevation(16);
+                @include media-breakpoint('xs') {
+                    padding: 24px;
+                    width: 100%;
+                }
+                .lock-form-header {
+                    display: flex;
+                    flex: 1 0 auto;
+                    .avatar-container {
+                        position: relative;
+                        margin-right: 16px;
+                        .avatar {
+                            margin: 0;
+                        }
+                        @include media-breakpoint('xs') {
+                            margin-right: 0;
+                        }
+                        mat-icon {
+                            position: absolute;
+                            bottom: -2px;
+                            right: -6px;
+                        }
+                    }
+                    .title {
+                        font-size: 20px;
+                        margin-bottom: 8px;
+                        @include media-breakpoint('xs') {
+                            margin-top: 16px;
+                            text-align: center;
+                        }
+                    }
+                    .subtitle {
+                        @include media-breakpoint('xs') {
+                            text-align: center;
+                        }
+                    }
+                }
+                form {
+                    width: 100%;
+                    margin: 32px 0 0 0;
+                    mat-form-field {
+                        width: 100%;
+                    }
+                    .submit-button {
+                        width: 220px;
+                        margin: 16px auto;
+                        display: block;
+                        @include media-breakpoint('xs') {
+                            width: 90%;
+                        }
+                    }
+                }
+                .message {
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

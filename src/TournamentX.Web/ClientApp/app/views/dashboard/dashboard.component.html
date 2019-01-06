@@ -1,0 +1,75 @@
+<ng-container>
+    <tom-top-bar></tom-top-bar>
+</ng-container>
+
+<div id="dashboard" class="">
+
+    <tom-dashboard-banner (created)="getTournaments()"></tom-dashboard-banner>
+
+    <!-- <div class="spinner" *ngIf="isLoading" fxLayout='row' fxLayoutAlign='center center' fxFlex>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div> -->
+    <div class="tournaments-container" fxLayout="column" fxLayoutAlign="start none">
+        <tom-tournament-widget *ngIf="onInit" class="widget no-hover no-pointer">
+            <div class="fuse-widget-front mat-white-bg mat-elevation-z1" style="border-top:0;">
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+                <div class="p-16 grey-50-bg">
+                </div>
+            </div>
+        </tom-tournament-widget>
+<!-- 
+        <div class="spinner" *ngIf="isLoading" fxLayout='row' fxLayoutAlign='center center' fxFlex>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </div> -->
+
+        <tom-tournament-widget class="widget" [@animate]="{value:'*',params:{y:'100%'}}" fxLayoutAlign="center space-around"
+            *ngFor="let tournament of filteredTournaments" (click)="navigateToTournament(tournament.tournamentId, 'bracket', 'players'); tournament.selected = true;">
+
+            <div class="fuse-widget-front mat-white-bg mat-elevation-z2 pointer" [ngClass]="{ 'no-border-top' : isLoading && tournament.selected }">
+                <mat-progress-bar mode="indeterminate" *ngIf="isLoading && tournament.selected"></mat-progress-bar>
+                <div class="p-16 grey-50-bg" fxLayout="row" fxLayoutAlign="start center">
+                    <span class="h4 secondary-text text-truncate">
+                        {{ tournament.tournamentName }}
+                    </span>
+                    <span *ngIf="tournament.live" class="h4 ml-auto" style="color:red;">&#x2b24;</span>
+                    <!-- <button class="ml-auto" mat-icon-button tournamentWidgetToggle aria-label="more">
+                        <mat-icon>exit_to_app</mat-icon>
+                    </button> -->
+                </div>
+            </div>
+
+            <!-- <div class="fuse-widget-back p-16 pt-32 mat-white-bg mat-elevation-z2">
+                <button mat-icon-button tournamentWidgetToggle class="fuse-widget-flip-button" aria-label="Flip widget">
+                    <mat-icon class="s-16">close</mat-icon>
+                </button>
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <button mat-fab class="shortcut">
+                        <mat-icon>developer_board</mat-icon>
+                    </button>
+                    <button mat-raised-button class="shortcut shortcut-text">
+                        PREVIEW
+                    </button>
+                    <button mat-fab class="shortcut">
+                        <mat-icon>link</mat-icon>
+                    </button>
+                </div>
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+
+                    <button mat-fab class="shortcut mt-4">
+                        <mat-icon>person_add</mat-icon>
+                    </button>
+                    <button mat-raised-button class="shortcut shortcut-text">
+                        DELETE
+                    </button>
+                    <button mat-fab class="shortcut">
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </div>
+
+            </div> -->
+        </tom-tournament-widget>
+
+    </div>
+
+</div>

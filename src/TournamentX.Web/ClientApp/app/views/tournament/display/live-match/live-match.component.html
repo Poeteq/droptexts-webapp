@@ -1,0 +1,36 @@
+<div class="match-card" fxFlex="100">
+
+    <div class="match-card-body" *ngIf="match.state !== 'Live' || !confirmingWinner">
+
+        <div class="match-card-top" fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="match-card-top-left">
+                <div class="h1 secondary-text tournament-status-live">LIVE</div>
+            </div>
+            <div class="match-card-top-right">
+                <div class="h1 secondary-text tournament-status">{{ stationName }}</div>
+            </div>
+        </div>
+
+        <div class="vs-row" fxLayout="row" fxLayoutAlign="center center">
+            <div class="h5 secondary-text vs-text">VS</div>
+        </div>
+
+        <div fxLayout="row">
+
+            <div fxFlex="50">
+                <div class="match-card-player-container" fxLayout="column" fxLayoutAlign="center stretch">
+                    <button class="match-button player-button">{{match.player1 && match.player1.name || 'Pending'}}</button>
+                </div>
+            </div>
+
+            <div fxFlex="50">
+                <div class="match-card-player-container" fxLayout="column" fxLayoutAlign="center stretch">
+                    <button class="match-button player-button">{{match.player2 && match.player2.name || 'Pending'}}</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

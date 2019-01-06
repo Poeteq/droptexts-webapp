@@ -1,0 +1,101 @@
+@import 'tom';
+
+tom-dashboard {
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    tom-dashboard-banner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .tournaments-container {
+        padding: 0 10rem;
+        @include media-breakpoint('lt-md') {
+            padding: 0;
+        }
+    }
+
+    .center {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .content {
+        display: flex;
+        flex: 1 1 auto;
+        padding: 22px;
+
+        @include media-breakpoint-down('md') {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: 180px;
+        }
+
+        .events {
+            width: 100%;
+            max-width: 1040px;
+            margin: 0 auto;
+            flex: 1;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+
+            @include media-breakpoint-down('md') {
+                flex: 1 0 100%;
+                margin-top: 32px;
+                width: 100%;
+                min-width: 0;
+                max-width: none;
+            }
+
+            .header {
+                margin: 0 0 0 12px; 
+
+                .new-button {
+                    background: rgb(245,245,245);
+                    color: #05527f;
+                    border: 1px solid #05527f;
+
+                    &:hover {
+                        color: white;
+                        transform: translateY(-1px);
+                        box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+                    }
+
+                    &:active {
+                        transform: translateY(1px);
+                    }
+                }
+            }
+
+            tom-event-widget {
+                @include media-breakpoint-down('md') {
+                    width: 100%;
+                    min-width: 0;
+                    max-width: none;
+                }
+            }
+        }
+    }
+}

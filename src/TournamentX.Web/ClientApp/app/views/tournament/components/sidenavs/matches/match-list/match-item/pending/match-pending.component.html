@@ -1,0 +1,46 @@
+<div class="match-card" fxFlex="100">
+
+    <div class="mb-32">
+
+        <div class="match-card-top" fxLayout="row">
+
+            <div class="match-card-top-right">
+
+                <div *ngIf="!match.isFinals" class="h3 secondary-text tournament-status">
+                    #{{match.matchNumber}}: Round {{match.round}} <span *ngIf="match.isLosers">- Losers</span>
+                </div>
+
+                <div *ngIf="match.isFinals" class="h3 secondary-text tournament-status">
+                    Finals
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="vs-row" fxLayout="row" fxLayoutAlign="center center">
+            <div class="h6 secondary-text vs-text">VS</div>
+        </div>
+
+        <div fxLayout="row">
+
+            <div fxFlex="50">
+                <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                    <button class="match-button player-button" [ngClass]="{ 'grayed-out' : !match.player1}">
+                        {{match.player1 && match.player1.name || 'Pending'}}
+                    </button>
+                </div>
+            </div>
+
+            <div fxFlex="50">
+                <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                    <button class="match-button player-button" [ngClass]="{ 'grayed-out' : !match.player1}">
+                        {{match.player2 && match.player2.name || 'Pending'}}
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

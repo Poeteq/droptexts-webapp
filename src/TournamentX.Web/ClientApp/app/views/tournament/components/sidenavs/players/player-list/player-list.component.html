@@ -1,0 +1,46 @@
+<!-- PLAYERS LIST-->
+<div class="player-list" fxLayout="column">
+
+    <!-- ADD PLAYER BUTTON -->
+    <button mat-button class="add-player" (click)="onAdd(searchText)" *ngIf="searchText.length > 0" [@animate]="{value:'*',params:{y:'-100%'}}">
+        <div fxLayout="row" fxLayoutAlign="start center">
+            <div fxLayout="row" fxFlex>
+                <div class="" fxFlex fxLayout="column" fxLayoutAlign="center start">
+                    <div class="add-text">
+                        Add
+                        <b>{{ searchText | truncate }}</b> to bracket
+                    </div>
+                </div>
+                <div class="add-icon" fxFlex fxLayout="column" fxLayoutAlign="center end">
+                    <mat-icon>add_circle_outline</mat-icon>
+                </div>
+            </div>
+        </div>
+    </button>
+    <!-- / ADD PLAYER BUTTON-->
+    <div #playerListHost class="ngx-dnd-container player-list-item" ngxDroppable [model]="players" (drop)="onDrop($event)">
+        <tom-player-list-item #playerListItem class="" ngxDraggable [model]="player" *ngFor="let player of players | filter: searchText; let i = index"
+            [isSwapState]="isSwapState" [player]="player" [index]="i" (swap)="onSwap($event)"
+            (remove)="onRemove($event)" (loading)="onLoading($event)" (openNotify)="onOpenNotify($event)">
+        </tom-player-list-item>
+    </div>
+    <!-- PLAYERS -->
+
+    <!-- / PLAYERS -->
+
+</div>
+<!-- / PLAYERS LIST-->
+
+<!-- NO RESULTS MESSAGE -->
+<div *ngIf="searchText && (players | filter: searchText).length === 0" class="no-results-message" [@animate]="{value:'*',params:{delay:'50ms',scale:'0.2'}}">
+    No results..
+</div>
+<!-- NO RESULTS MESSAGE-->
+
+
+<!-- Bracket Start  -->
+<div *ngIf="!searchText && players.length == 0" class="no-results-message" fxLayout="row" fxLayoutAlign="space-evenly center">
+    Start adding players here...
+    <mat-icon class="s-32 s-md-32 tx-accent-fg">group_add</mat-icon>
+</div>
+<!-- Bracket Start  -->

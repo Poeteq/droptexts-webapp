@@ -1,0 +1,35 @@
+<ng-container *ngIf="showSidenav">
+    <tom-top-bar *ngIf="showSidenav" [tournamentName]="(tournament$ | async)?.tournamentName" [tournamentId]="tournamentId"
+        [brackets]="tournament?.brackets"></tom-top-bar>
+</ng-container>
+
+<tom-tournament-nav-bar *ngIf="(tournament$ | async)?.state == 1" [tournamentId]="tournamentId">
+</tom-tournament-nav-bar>
+
+<div class="row">
+    <tom-tournament-bracket-bar *ngIf="(tournament$ | async)?.state == 2" class="col-sm-6 ml-auto" [style]="tournament.style"
+        [bracketId]="bracketId" [tournamentId]="tournamentId">
+    </tom-tournament-bracket-bar>
+</div>
+
+<mat-drawer-container class="app-body" *ngIf="showSidenav" autosize>
+
+    <mat-drawer *ngIf="viewReady" #sidenav class="sidenav left-sidenav" position="start" [mode]="(screenWidth > 840 && state != 'display') ? 'side' : 'over'"
+        [opened]="screenWidth > 840" mode="side" mat-is-locked-open="gt-md" fxFlex fxShow=”true”>
+
+        <tom-tournament-matches-sidenav *ngIf="(tournament$ | async)?.state == 2" [@slideInOut] [live]="(tournament$ | async)?.state == 2"
+            [tournament]="tournament$ | async" [bracketId]="bracketId" [isLoading]="isLoading">
+        </tom-tournament-matches-sidenav>
+
+        <tom-players-sidenav *ngIf="(tournament$ | async)?.state == 1" [@slideInOut] [tournamentId]="tournamentId" [isLoading]="isLoading">
+        </tom-players-sidenav>
+
+    </mat-drawer>
+
+    <router-outlet></router-outlet>
+
+</mat-drawer-container>
+
+<div class="row">
+    <tom-tournament-widget-bar class="col-sm-6 ml-auto"></tom-tournament-widget-bar>
+</div>

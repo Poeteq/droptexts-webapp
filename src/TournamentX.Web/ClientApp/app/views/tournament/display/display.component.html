@@ -1,0 +1,23 @@
+<div fxLayout="row" fxFill>
+
+    <div fxFlex="55">
+        <div *ngIf="showMatchesBracket" fxLayout="column" fxFill>
+            <div fxFlex="50">
+                <div fxLayout="row wrap" class="mat-elevation-z2">
+                    <tom-live-match *ngFor="let match of matchesFour" [match]="match" [stations]="stations" fxFlex="50"></tom-live-match>
+                </div>
+            </div>
+            <h2>Up Next. Please Stand By..</h2>
+            <div fxFlex="50" *ngIf="matches" class="mat-elevation-z2">
+                <tom-pending-match-list [matches]="matches" [pq]="pq"></tom-pending-match-list>
+            </div>
+        </div>
+    </div>
+
+    <div fxFlex="45" class="mat-elevation-z2">
+        <mat-sidenav-container>
+            <tom-winners-bracket-visual style="width: 100%;" [bracket]="bracket$ | async" [type]="'matches'"></tom-winners-bracket-visual>
+        </mat-sidenav-container>
+    </div>
+
+</div>

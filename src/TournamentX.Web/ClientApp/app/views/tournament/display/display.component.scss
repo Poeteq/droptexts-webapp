@@ -1,0 +1,21 @@
+@import 'tom';
+:host {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    h2 {
+        margin-left: 16px;
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: .01em;
+        line-height: 24px;
+        // color: rgba(255, 255, 255, 0.75);
+    }
+    mat-sidenav-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}

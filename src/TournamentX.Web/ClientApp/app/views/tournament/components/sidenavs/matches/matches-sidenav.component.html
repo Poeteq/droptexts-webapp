@@ -1,0 +1,95 @@
+<!-- SIDENAV HEADER -->
+<div class="sidenav-header">
+
+    <!-- SIDENAV HEADER -->
+    <div class="sidenav-header">
+        <!-- PLAYERS TOOLBAR -->
+        <mat-toolbar>
+
+            <!-- TOOLBAR BOTTOM -->
+            <mat-toolbar-row>
+
+                <!-- SEARCH -->
+                <div class="search-wrapper" fxFlex fxLayout="row" fxLayoutAlign="start center">
+
+                    <div class="real-search" fxFlex fxLayout="row" fxLayoutAlign="start center">
+
+                        <mat-icon>search</mat-icon>
+
+                        <input [(ngModel)]="searchText" type="text" placeholder="Search matches, players"
+                               fxFlex>
+
+                    </div>
+                </div>
+                <!-- / SEARCH -->
+
+            </mat-toolbar-row>
+            <!-- / TOOLBAR BOTTOM -->
+
+        </mat-toolbar>
+        <!-- / PLAYERS TOOLBAR -->
+
+    </div>
+    <!-- / SIDENAV HEADER -->
+    <!-- SIDENAV CONTENT -->
+    <!-- PLAYERS TOOLBAR -->
+    <mat-toolbar>
+
+        <!-- TOOLBAR BOTTOM -->
+        <mat-toolbar-row>
+
+            <!-- SEARCH -->
+            <div class="search-wrapper" fxFlex fxLayout="row" fxLayoutAlign="start center">
+
+                <div class="search" fxFlex fxLayout="row" fxLayoutAlign="space-around">
+
+                    <!-- <mat-icon>search</mat-icon> -->
+                    <div class="state-button py-8 px-12 border-radius-2 line-height-1 cursor-pointer" (click)="state = 'live'"
+                         [ngClass]="{'active-tab': state === 'live'}" fxLayout="row" fxLayoutAlign="center center"
+                         fxFlex>
+                        <span>LIVE</span>
+                    </div>
+                    <div class="state-button py-8 px-12 border-radius-2 line-height-1 cursor-pointer" (click)="state = 'pending'"
+                         [ngClass]="{'active-tab': state === 'pending'}" fxLayout="row" fxLayoutAlign="center center"
+                         fxFlex>
+                        <span>PENDING</span>
+                    </div>
+                    <div class="state-button py-8 px-12 border-radius-2 line-height-1 cursor-pointer" (click)="state = 'complete'"
+                         [ngClass]="{'active-tab': state === 'complete'}" fxLayout="row" fxLayoutAlign="center center"
+                         fxFlex>
+                        <span>HISTORY</span>
+                    </div>
+                </div>
+                <!-- / SEARCH -->
+
+            </div>
+
+        </mat-toolbar-row>
+        <!-- / TOOLBAR BOTTOM -->
+
+    </mat-toolbar>
+    <!-- / PLAYERS TOOLBAR -->
+
+</div>
+<!-- / SIDENAV HEADER -->
+
+<div class="sidenav-content" *ngIf="false" fxFlex>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+
+<!-- SIDENAV CONTENT -->
+<div class="sidenav-content">
+
+    <!-- PLAYERS CONTENT -->
+    <div *tomIfOnDom [@animateStagger]="{value:'50'}" style="display: flex; flex:1; flex-direction: column">
+
+        <tom-tournament-match-list [matches]="matches" [state]="state" [bracketId]="bracketId" [isLoading]="isLoading" [searchText]="searchText"
+                                   (load)="setLoading($event)" tom-perfect-scroll-bar>
+
+        </tom-tournament-match-list>
+
+    </div>
+    <!-- / PLAYERS CONTENT -->
+
+</div>
+<!-- / SIDENAV CONTENT -->

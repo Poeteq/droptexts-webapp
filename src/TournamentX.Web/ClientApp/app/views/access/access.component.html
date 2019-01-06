@@ -1,0 +1,64 @@
+<div id="lock" fxLayout="column">
+
+    <div id="lock-form-wrapper" fxLayout="column" fxLayoutAlign="center center">
+
+        <div id="lock-form" style="height:128px;flex:0!important;padding-bottom:43px;" *ngIf="isLoading" fxLayout='row' fxLayoutAlign='center center'>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </div>
+        
+        <div id="lock-form" *ngIf="!isLoading">
+
+         
+            <div class="avatar-container mb-3">
+            <img class="logo-icon" (click)="showMenu()"   src="./../../../assets/logos/tournamentx.png"> <!-- (mousedown)="mousedown()" (mouseup)="mouseup()" (mouseleave)="mouseup()"-->
+            </div>
+
+            <div class="lock-form-header" fxLayout="column" fxLayoutAlign="center center" fxLayout.gt-xs="row"
+                fxLayoutAlign.gt-xs="start center" *ngIf="hasError">
+
+                <div class="avatar-container ml-5">
+                    <mat-icon class="s-32">lock</mat-icon>
+                </div>
+
+                <div class="ml-3" style="color:red;">
+                    <div class="title">ERROR</div>
+                    <div class="subtitle">
+                        {{ errorMessage }}
+                    </div>
+                </div>
+
+            </div>
+
+            <form name="lockForm" novalidate>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input name="email" [(ngModel)]="email" matInput>
+                    <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+                    <mat-error>
+                        Email is required
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Access Key</mat-label>
+                    <input name="token" [(ngModel)]="token" matInput>
+                    <mat-icon matSuffix class="secondary-text">vpn_key</mat-icon>
+                    <mat-error>
+                        Access Key is required
+                    </mat-error>
+                </mat-form-field>
+
+                <button mat-raised-button class="submit-button btn-primary-tx square" (click)="attemptAccess(email,token)"
+                    aria-label="UNLOCK">
+                    UNLOCK
+                </button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+</div>

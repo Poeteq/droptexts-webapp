@@ -1,0 +1,94 @@
+<div class="match-card" fxFlex="100">
+
+    <div class="mb-32" *ngIf="(match.state !== 1 && match.state !== 2) || !confirmingWinner">
+
+        <div class="match-card-top" fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="match-card-top-right">
+                <div *ngIf="!match.isFinals" class="h3 secondary-text tournament-status">
+                    #{{match.matchNumber}}: Round {{match.round}} <span *ngIf="match.isLosers">- Losers</span>
+                </div>
+                <div *ngIf="match.isFinals" class="h3 secondary-text tournament-status">
+                    Finals
+                </div>
+            </div>
+            <!-- <div class="live-button">
+                <mat-icon class="rotating">timelapse</mat-icon>
+            </div> -->
+            <div class="live-button">
+                <button class="menu-icon-button" [matMenuTriggerFor]="matchMenu">
+                    <mat-icon *ngIf="match.stateName != 'Live' && !match.preLive">more_vert</mat-icon>
+                    <mat-icon *ngIf="match.preLive == true" class="colorred">timelapse</mat-icon>
+                    <mat-icon *ngIf="match.stateName == 'Live'" class="rotating colorred">timelapse</mat-icon>
+                    <!-- offline_bolt timelapse games -->
+                </button>
+
+                <mat-menu #matchMenu="matMenu" [overlapTrigger]="false">
+                    <button mat-menu-item *ngIf="match.stateName != 'Live'" (click)="updateMatch(2); match.preLive = true">
+                        <mat-icon>offline_bolt</mat-icon>
+                        <span>Start Match</span>
+                    </button>
+                    <button mat-menu-item *ngIf="match.stateName == 'Live'" (click)="updateMatch(4);">
+                        <mat-icon>replay</mat-icon>
+                        <span>Stop Match</span>
+                    </button>
+                    
+                    <button mat-menu-item (click)="sendNotification()">
+                            <mat-icon>notifications</mat-icon>
+                            <span>Notify Players</span>
+                        </button>
+
+                    <button mat-menu-item (click)="openPlayerDialog(1)">
+                        <mat-icon>account_circle</mat-icon>
+                        <span>{{match.player1.name }}</span>
+                    </button>
+
+                    <button mat-menu-item (click)="openPlayerDialog(2)">
+                        <mat-icon>account_circle</mat-icon>
+                        <span>{{match.player2.name }}</span>
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+
+        <div class="vs-row" fxLayout="row" fxLayoutAlign="center center">
+            <div class="h6 secondary-text vs-text">VS</div>
+        </div>
+
+        <div fxLayout="row">
+
+            <div fxFlex="50">
+                <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                    <button class="match-button player-button" (click)="onWinnerSelected(1)"><span class="text-truncate">{{match.player1
+                            && match.player1.name || 'Pending'}}</span></button>
+                </div>
+            </div>
+
+            <div fxFlex="50">
+                <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                    <button class="match-button player-button" (click)="onWinnerSelected(2)"><span class="text-truncate">{{match.player2
+                            && match.player2.name || 'Pending'}}</span></button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div fxLayout="column" *ngIf="(match.state === 1 || match.state === 2)  && confirmingWinner">
+        <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+
+        <div fxFlex="50">
+            <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                <button class="base-button confirm-button" (click)="onConfirmWinner()" [disabled]="isLoading">Confirm</button>
+            </div>
+        </div>
+
+        <div fxFlex="50">
+            <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                <button class="base-button cancel-button" (click)="onCancelWinner()" [disabled]="isLoading">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

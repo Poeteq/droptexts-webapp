@@ -1,0 +1,61 @@
+<div id="container" style="font-size:12px;">
+    <svg #svg [attr.width]="width" [attr.height]="height">
+    <!-- <svg #svg [attr.preserveAspectRatio]="'xMinYMin meet'" [attr.viewBox]="viewBox"> -->
+        <g>
+            <g [attr.transform]="svgTranslation">
+                <svg:path *ngFor="let link of links" [attr.d]="linkPath(link)" />
+                <g *ngFor="let node of nodes; let i = index" [attr.transform]="nodeTranslation(node)">
+                    <svg:rect height="30" width="150" id="rec1" rx="2" ry="2" class="mat-elevation-z2" 
+                        [ngClass]="{
+                            'highlight' : (node['highlight1'] == true || node.data.player1.name == hoveredName) && node.data.stateName != 'Live', 
+                            'colorred': (node['highlight1'] == true || node.data.player1.name == hoveredName) && node.data.stateName == 'Live',
+                            'glow' : node.data.stateName == 'Live' ,
+                            'faded': node.data.loser.name == node.data.player1.name
+                        }"
+                        (click)=onNodeClick(node,1) (mouseover)="node['highlight1'] = true; playerHovered(node, 1)"
+                        (mouseleave)="node['highlight1'] = false; leave(node, 1)" />
+                    <svg:rect y="30" height="30" width="150" rx="2" ry="2" id="rec2"
+                        [ngClass]="{
+                            'highlight' : (node['highlight2'] == true || node.data.player2.name == hoveredName) && node.data.stateName != 'Live',
+                            'colorred': (node['highlight2'] == true || node.data.player2.name == hoveredName) && node.data.stateName == 'Live',
+                            'glow' : node.data.stateName == 'Live',
+                            'faded': node.data.loser.name == node.data.player2.name
+                        }"
+                        (click)=onNodeClick(node,2) (mouseover)="node['highlight2'] = true; playerHovered(node, 2)"
+                        (mouseleave)="node['highlight2'] = false; leave(node,2);" />
+                    <svg: line y1="30" x2="150" y2="30" />
+                    <svg: line x1="120" x2="120" y2="60" />
+                    <svg:text x="-15" y="-5" id="match{{i}}-number">{{node.data.matchNumber}}</svg:text>
+                    <svg:text x="10" y="20" id="match{{i}}-name1" class="player-text"
+                        [ngClass]="{
+                            'white-text' : node['highlight1'] == true  || node.data.player1.name == hoveredName, 
+                            'gray-text font-thin' : node.data.player1.isBye() == true 
+                        }">
+                        {{ trimText(node.data.player1.name, 18)}}
+                    </svg:text>
+                    <svg:text x="10" y="50" id="match{{i}}-name2" class="player-text" 
+                        [ngClass]="{
+                            'white-text' : node['highlight2'] == true || node.data.player2.name == hoveredName, 
+                            'gray-text font-thin' : node.data.player2.isBye() == true 
+                        }">
+                        {{ trimText(node.data.player2.name, 18)}}
+                    </svg:text>
+                    <svg:text x="130" y="20" class="greencolor" 
+                        [ngClass]="{
+                            'white-text' : node['highlight1'] == true  || node.data.player1.name == hoveredName,
+                            'hide' : node.data.player1.isBye() || node.data.winner.exists() || (node.data.winner.name === node.data.player2.name)
+                            }">
+                        {{"\u2b24"}}
+                    </svg:text>
+                    <svg:text x="130" y="50" class="greencolor" 
+                        [ngClass]="{
+                            'white-text' : node['highlight2'] == true || node.data.player2.name == hoveredName,
+                            'hide' : node.data.player2.isBye() || node.data.winner.exists() || (node.data.winner.name === node.data.player1.name) 
+                            }">
+                        {{"\u2b24"}}
+                    </svg:text>
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>

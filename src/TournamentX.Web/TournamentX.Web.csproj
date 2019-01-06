@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+        <AssemblyName>TournamentX.Web</AssemblyName>
+        <RootNamespace>TournamentX.Web</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Microsoft.AspNetCore.Rewrite" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TournamentX.Core\TournamentX.Core.csproj" />
+      <ProjectReference Include="..\TournamentX.Infrastructure\TournamentX.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    </Target>
+
+    <Target Name="NgDebug" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">
+        <Exec WorkingDirectory="$(ProjectDir)" Command="ng build -watch --ec" />
+    </Target>
+
+</Project>

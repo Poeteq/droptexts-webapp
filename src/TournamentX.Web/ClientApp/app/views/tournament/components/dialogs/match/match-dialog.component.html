@@ -1,0 +1,52 @@
+<div>
+    <div class="dialog-content-wrapper">
+        <div class="match-card" fxFlex="100">
+                <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+            <div>
+                <div>
+                    <div class="title" *ngIf="!match.winner.isBye()">{{ match.winner.name }} won!</div>
+                    <div class="title" *ngIf="match.winner.isBye() && !match.player1.isBye() && !match.player2.isBye()">Select a Winner!</div>
+                    <div class="title" *ngIf="match.winner.isBye() && (match.player1.isBye() || match.player2.isBye())">Match</div>
+                </div>
+                <div *ngIf="!isConfirmingWinner">
+                    <div class="match-card-top" fxLayout="row">
+                        <div class="match-card-top-right">
+                            <div class="h3 secondary-text tournament-status">
+                                <span> Match {{match.matchNumber}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vs-row" fxLayout="row" fxLayoutAlign="center center">
+                        <div class="h6 secondary-text vs-text">VS</div>
+                    </div>
+                    <div fxLayout="row">
+                        <div fxFlex="50">
+                            <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                                <button class="match-button player-button" [ngClass]="{'player-button-won' : match.player1.name == match.winner.name }" (click)="selectPlayerOne()" [disabled]="[MatchState.Ready, MatchState.Live].indexOf(match.state) < 0">
+                                    {{ !match.player1.isBye() ? match.player1.name : match.player1PlaceHolderText }}</button>
+                            </div>
+                        </div>
+                        <div fxFlex="50">
+                            <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                                <button class="match-button player-button" [ngClass]="{'player-button-won' : match.player2.name == match.winner.name }" (click)="selectPlayerTwo()" [disabled]="[MatchState.Ready, MatchState.Live].indexOf(match.state) < 0">
+                                    {{ !match.player2.isBye() ? match.player2.name : match.player2PlaceHolderText}}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div fxLayout="column" *ngIf="isConfirmingWinner">
+                <div fxFlex="50">
+                    <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                        <button class="base-button confirm-button" (click)="onConfirmWinner()" [disabled]="isLoading">Confirm</button>
+                    </div>
+                </div>
+                <div fxFlex="50">
+                    <div class="match-button-container" fxLayout="column" fxLayoutAlign="center stretch">
+                        <button class="base-button cancel-button" (click)="onCancelWinner()" [disabled]="isLoading">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

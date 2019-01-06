@@ -1,0 +1,53 @@
+<!-- <div id="player-sidenav"> -->
+    <!-- SIDENAV HEADER -->
+    <div class="sidenav-header">
+        <!-- PLAYERS TOOLBAR -->
+        <mat-toolbar>
+
+            <!-- TOOLBAR BOTTOM -->
+            <mat-toolbar-row>
+
+                <!-- SEARCH -->
+                <div class="search-wrapper" fxFlex fxLayout="row" fxLayoutAlign="start center">
+
+                    <div class="search" fxFlex fxLayout="row" fxLayoutAlign="start center">
+
+                        <mat-icon>search</mat-icon>
+
+                        <input [(ngModel)]="searchText" (keydown.enter)="onAdd(searchText)" type="text" placeholder="Search or add a player"
+                            fxFlex>
+
+                    </div>
+                </div>
+                <!-- / SEARCH -->
+
+            </mat-toolbar-row>
+            <!-- / TOOLBAR BOTTOM -->
+
+        </mat-toolbar>
+        <!-- / PLAYERS TOOLBAR -->
+
+    </div>
+    <!-- / SIDENAV HEADER -->
+    <!-- SIDENAV CONTENT -->
+    <div class="sidenav-content" *ngIf="!isLoading" fxFlex>
+
+        <!-- PLAYERS CONTENT -->
+        <div *tomIfOnDom [@animateStagger]="{value:'50'}">
+
+
+            <tom-player-list [players]="players" [searchText]="searchText" (add)="onAdd($event)" (drop)="onDrop($event)"
+                (swap)="onSwap($event)" (remove)="onRemove($event)" (loading)="setLoading($event)" [isSwapState]="isSwapState"
+                (openNotifications)="openNotificationsDialog($event)">
+            </tom-player-list>
+
+        </div>
+        <!-- / PLAYERS CONTENT -->
+
+    </div>
+    <!-- / SIDENAV CONTENT -->
+
+    <div class="sidenav-content" *ngIf="isLoading" fxFlex>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+<!-- </div> -->

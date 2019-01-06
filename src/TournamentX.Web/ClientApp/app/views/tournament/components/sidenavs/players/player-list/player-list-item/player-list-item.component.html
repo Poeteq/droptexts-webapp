@@ -1,0 +1,52 @@
+<!-- PLAYER -->
+<div class="player" [@animate]="{value:'*',params:{delay:'200ms',y:'50px'}}">
+
+  <div fxLayout="row" fxLayoutAlign="start center">
+
+    <div class="avatar-wrapper" fxFlex="0 1 auto" fxLayoutAlign="center center">
+      <mat-icon class="handle mr-16 draggable" ngxDragHandle fxFlex="0 1 auto" [ngClass]="{ 'hidden' : isSwapState }">
+        drag_handle
+      </mat-icon>
+    </div>
+
+    <div fxLayout="row" fxFlex>
+
+      <div class="" fxFlex fxLayout="column" fxLayoutAlign="center start">
+        <div class="player-name"><span style="font-size: 12px; color: grey;">{{ player?.seed }}.</span> {{ player.name
+          }}</div>
+      </div>
+
+      <div fxLayout="column" fxLayoutAlign="center end">
+
+        <button mat-mini-fab class="mini-icon btn-outline" (click)="onSwap()" style="background-color: white; color: #05527f;"
+          *ngIf="isSwapState">
+          <mat-icon>swap_horiz</mat-icon>
+        </button>
+
+        <button class="show-more-button" [matMenuTriggerFor]="playerMenu" *ngIf="!isSwapState">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #playerMenu="matMenu" [overlapTrigger]="false">
+
+          <button mat-menu-item class="" (click)="onSwap()">
+            <mat-icon>swap_horiz</mat-icon>
+            <span>Swap</span>
+          </button>
+
+          <button mat-menu-item class="" (click)="onRemove()">
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+
+          <button mat-menu-item (click)="onOpenNotify()">
+            <mat-icon>notifications</mat-icon>
+            <span>Notifications</span>
+          </button>
+
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / PLAYER -->

@@ -1,0 +1,73 @@
+@import 'tom';
+
+
+
+.flipped {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+mat-icon {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+:host {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  z-index: 4;
+  background-color: white;
+
+  .mat-toolbar {
+    height: 48px;
+    background: inherit;
+    color: inherit;
+    position: relative;
+    @include mat-elevation(2);
+  }
+
+
+
+  .logo {
+    // display: flex;
+    align-items: center;
+
+    .logo-icon {
+      width: 240px;
+      cursor: pointer;
+    }
+  }
+
+  .account-button {
+    min-width: 64px;
+    height: 64px;
+
+    .clickable {
+      cursor: pointer;
+    }
+
+    // @include media-breakpoint-down('xs') {
+    //   height: 56px;
+    // }
+  }
+
+  .toolbar-seperator {
+    height: 64px;
+    width: 1px;
+    background: rgba(0, 0, 0, .12);
+
+    // @include media-breakpoint-down('xs') {
+    //   height: 56px;
+    // }
+  }
+  
+}

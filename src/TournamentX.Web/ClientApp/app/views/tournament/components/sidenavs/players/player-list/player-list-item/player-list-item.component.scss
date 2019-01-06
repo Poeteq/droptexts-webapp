@@ -1,0 +1,118 @@
+@import 'tom';
+
+:host {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  cursor: default !important;
+
+  .player {
+    white-space: normal;
+    text-align: left;
+    letter-spacing: .010em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 16px;
+    font-weight: 400;
+
+    .hidden { 
+      display: none !important;
+    }
+
+    .avatar-wrapper {
+      cursor: move;
+      .avatar {
+        margin-right: 16px;
+      }
+    }
+
+    .player-name {
+      font-size: 16px;
+      text-overflow: ellipsis;
+      max-width: 128px;
+    }
+
+    .player-seed {
+      line-height: 1.6em;
+      margin: 0;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+    .player-swap-button {
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      background-color: white;
+    }
+
+    .show-more-button {
+      background-color: white;
+      color: gray !important;
+      cursor: pointer;
+    }
+
+    .mini-icon {
+      border-radius: .25em !important;
+      box-shadow: 0 7px 14px rgba(50,50,93,.05), 0 3px 6px rgba(0,0,0,.05);
+    }
+    
+    .btn-colored {
+      background-color: $tx-bluedark;
+      color: white;
+
+      &:hover {
+          background-color: #0778ba;
+          transform: translateY(-1px);
+          box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+      }
+    }
+
+    .btn-outline {
+      // border: 1px solid black;
+      color: $tx-bluedark !important;
+
+      &:hover {
+          color: #0570af;
+          transform: translateY(-1px);
+          box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+      }
+    }
+  }
+
+  &:not(.has-handle):not(.move-disabled),
+    &.has-handle [ngxdraghandle],
+    &.has-handle [ngxDragHandle] {
+        cursor: move;
+    }
+
+    .ngx-dnd-content {
+        user-select: none;
+    }
+
+    &.gu-mirror {
+        position: fixed !important;
+        margin: 0 !important;
+        z-index: 9999 !important;
+        opacity: 0.8;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        @include mat-elevation(7);
+    }
+
+    &.gu-hide {
+        display: none !important;
+    }
+
+    &.gu-unselectable {
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+    }
+
+    &.gu-transit {
+        opacity: 0.2;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+        filter: alpha(opacity=20);
+    }
+}

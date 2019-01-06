@@ -1,0 +1,108 @@
+<div id="container" style="font-size:12px;margin:24px 0 0 12px;">
+    <svg #svg [attr.width]="width" [attr.height]="height">
+      <!-- <svg #svg [attr.preserveAspectRatio]="'xMinYMin meet'" [attr.viewBox]="viewBox"> -->
+    <g>
+      <g [attr.transform]="svgTranslation">
+        <svg:path *ngFor="let link of links" [attr.d]="linkPath(link)" />
+        <g *ngFor="let node of nodes; let i = index" [attr.transform]="nodeTranslation(node)">
+          <g>
+            <svg:rect height="30" width="150" rx="2" ry="2" id="rec1" class="mat-elevation-z2" 
+              [ngClass]="{
+                'highlight' : (node['match1highlight1'] == true || node.data.matchOne.player1.name == hoveredName) && node.data.matchOne.stateName != 'Live', 
+                'colorred': (node['match1highlight1'] == true || node.data.matchOne.player1.name == hoveredName) && node.data.matchOne.stateName == 'Live',
+                'glow' : node.data.matchOne.stateName == 'Live' 
+              }"
+              (click)="onNodeClick(node,1,1)" (mouseover)="node['match1highlight1'] = true; hover(node, 1,1)"
+              (mouseleave)="node['match1highlight1'] = false; leave(node, 1,1)" />
+            <svg:rect y="30" height="30" width="150" rx="2" ry="2" id="rec2" 
+              [ngClass]="{
+                'highlight' : (node['match1highlight2'] == true || node.data.matchOne.player2.name == hoveredName) && node.data.matchOne.stateName != 'Live', 
+                'colorred': (node['match1highlight2'] == true || node.data.matchOne.player2.name == hoveredName) && node.data.matchOne.stateName == 'Live',
+                'glow' : node.data.matchOne.stateName == 'Live' 
+              }"
+              (click)="onNodeClick(node,2,1)" (mouseover)="node['match1highlight2'] = true; hover(node, 2, 1)"
+              (mouseleave)="node['match1highlight2'] = false; leave(node,2, 1);" />
+            <svg: line y1="30" x2="150" y2="30" />
+            <svg: line x1="120" x2="120" y2="60" />
+            <svg:text x="-10" y="-5" id="match{{i}}-number">{{node.data.matchOne.matchNumber}}</svg:text>
+            <svg:text x="10" y="20" id="match{{i}}-name1" 
+              [ngClass]="{
+                'white-text' : node['match1highlight1'] == true  || node.data.matchOne.player1.name == hoveredName, 'gray-text font-thin' : node.data.matchOne.player1.isBye() == true }">
+              {{ trimText(node.data.matchOne.player1.name, 18)}}
+            </svg:text>
+            <svg:text x="10" y="50" id="match{{i}}-name2" 
+              [ngClass]="{
+                'white-text' : node['match1highlight2'] == true || node.data.matchOne.player2.name == hoveredName, 
+                'gray-text font-thin' : node.data.matchOne.player2.isBye() == true 
+              }">
+              {{ trimText(node.data.matchOne.player2.name, 18)}}
+            </svg:text>
+            <svg:text x="130" y="20" class="greencolor" 
+              [ngClass]="{
+                'white-text' : node['highlight1'] == true  || node.data.matchOne.player1.name == hoveredName,
+                'hide' : node.data.matchOne.player1.isBye() || node.data.matchOne.winner.exists() || (node.data.matchOne.winner.name === node.data.matchOne.player2.name) 
+              }">
+              {{"\u2b24"}}
+            </svg:text>
+            <svg:text x="130" y="50" class="greencolor" 
+              [ngClass]="{
+                'white-text' : node['highlight2'] == true || node.data.matchOne.player2.name == hoveredName,
+                'hide' : node.data.matchOne.player2.isBye() || node.data.matchOne.winner.exists() || (node.data.matchOne.winner.name === node.data.matchOne.player1.name) 
+              }">
+                {{"\u2b24"}}
+            </svg:text>
+          </g>
+          <g>
+            <svg:rect x="170" height="30" width="150" rx="2" ry="2" id="rec1" 
+              [ngClass]="{
+                'highlight' : (node['match2highlight1'] == true || node.data.matchTwo.player1.name == hoveredName) && node.data.matchTwo.stateName != 'Live', 
+                'colorred': (node['match2highlight1'] == true || node.data.matchTwo.player1.name == hoveredName) && node.data.matchTwo.stateName == 'Live',
+                'glow' : node.data.matchTwo.stateName == 'Live' 
+              }"
+              (click)="onNodeClick(node,1, 2)" (mouseover)="node['match2highlight1'] = true; hover(node, 1, 2)"
+              (mouseleave)="node['match2highlight1'] = false; leave(node, 1, 2)" />
+            <svg:rect x="170" y="30" height="30" width="150" rx="2" ry="2" id="rec2" 
+              [ngClass]="{
+                'highlight' : (node['match2highlight2'] == true || node.data.matchTwo.player2.name == hoveredName) && node.data.matchTwo.stateName != 'Live', 
+                'colorred': (node['match2highlight2'] == true || node.data.matchTwo.player2.name == hoveredName) && node.data.matchTwo.stateName == 'Live',
+                'glow' : node.data.matchTwo.stateName == 'Live' 
+              }"
+              (click)="onNodeClick(node,2, 2)" (mouseover)="node['match2highlight2'] = true; hover(node, 2, 2)"
+              (mouseleave)="node['match2highlight2'] = false; leave(node,2, 2);" />
+            <svg: line y1="30" x2="150" y2="30" />
+            <svg: line x1="120" x2="120" y2="60" />
+            <svg:text x="160" y="-5" id="match{{i}}-number">{{node.data.matchTwo.matchNumber}}</svg:text>
+            <svg:text x="180" y="20" id="match{{i}}-name1" 
+            [ngClass]="{
+              'white-text' : node['match2highlight1'] == true || node.data.matchTwo.player1.name == hoveredName, 
+              'gray-text font-thin' : node.data.matchTwo.player1.isBye() == true 
+            }">
+              {{ trimText(node.data.matchTwo.player1.name, 18)}}
+            </svg:text>
+            <svg:text x="180" y="50" id="match{{i}}-name2" 
+              [ngClass]="{
+                'white-text' : node['match2highlight2'] == true || node.data.matchTwo.player2.name == hoveredName, 
+                'gray-text font-thin' : node.data.matchTwo.player2.isBye() == true 
+              }">
+              {{ trimText(node.data.matchTwo.player2.name, 18)}}
+            </svg:text>
+            <svg:text x="300" y="20" class="greencolor" 
+            [ngClass]="{
+              'white-text' : node['match2highlight1'] == true  || node.data.matchTwo.player1.name == hoveredName,
+              'hide' : node.data.matchTwo.player1.isBye() || node.data.matchTwo.winner.exists() || (node.data.matchTwo.winner.name === node.data.matchTwo.player2.name) 
+            }">
+            {{"\u2b24"}}
+          </svg:text>
+            <svg:text x="300" y="50" class="greencolor" 
+            [ngClass]="{
+              'white-text' : node['match2highlight2'] == true || node.data.matchTwo.player2.name == hoveredName,
+              'hide' : node.data.matchTwo.player2.isBye() || node.data.matchTwo.winner.exists() || (node.data.matchTwo.winner.name === node.data.matchTwo.player1.name) 
+            }">
+            {{"\u2b24"}}
+          </svg:text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
