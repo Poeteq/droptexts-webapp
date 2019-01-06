@@ -8,6 +8,7 @@ using TournamentX.Core.Config;
 using TournamentX.Infrastructure.Tournaments;
 using TournamentX.Core.Interfaces;
 using TournamentX.Infrastructure.Player;
+using TournamentX.Infrastructure.Message;
 
 namespace TournamentX.Infrastructure
 {
@@ -21,6 +22,7 @@ namespace TournamentX.Infrastructure
             services.AddScoped<IOrganizerClient, OrganizerClient>();
             services.AddScoped<IPlayerClient, PlayerClient>();
             services.AddScoped<IBracketClient, BracketClient>();
+            services.AddScoped<IMessageProvider, MessageProvider>();
             #endregion
 
             var appConfig = new AppConfig();

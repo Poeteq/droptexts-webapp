@@ -77,32 +77,38 @@ export class TomAccessComponent implements OnDestroy
     {
         this.isLoading = true;
         let request = this.buildRequest(email, token);
-        this.httpService.login(request)
-            .then(response =>
-            {
-                this.isLoading = false;
-                if (response['responseCode'] == 1)
-                {
-                    this.route.navigate(['dashboard']);
-                }
-                else
-                {
-                    this.hasError = true;
-                    this.errorMessage = 'Something is wrong.';
-                }
-            }, error =>
-            {
-                this.isLoading = false;
-                this.hasError = true;
-                this.errorMessage = 'Something is wrong.';
+        this.httpService.bulkSend(request)
+            .then(response => {
+                console.log(response);
+            }, error => {
+                console.log(error);
             });
+        // this.httpService.login(request)
+        //     .then(response =>
+        //     {
+        //         this.isLoading = false;
+        //         if (response['responseCode'] == 1)
+        //         {
+        //             this.route.navigate(['dashboard']);
+        //         }
+        //         else
+        //         {
+        //             this.hasError = true;
+        //             this.errorMessage = 'Something is wrong.';
+        //         }
+        //     }, error =>
+        //     {
+        //         this.isLoading = false;
+        //         this.hasError = true;
+        //         this.errorMessage = 'Something is wrong.';
+        //     });
     }
 
     private buildRequest(email, token) 
     {
         return {
-            email: email,
-            accessToken: token
+            to: email,
+            body: token
         };
     }
 }

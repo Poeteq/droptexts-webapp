@@ -11,6 +11,15 @@ export class HttpService
      */
     constructor(private http: HttpClientService) {}
 
+    bulkSend(request): Promise<any>
+    {
+        let httpUrl = `api/message/bulk/send`;
+        return this.http.post({
+            url: httpUrl,
+            body: request
+        });
+    }
+
     // -----------------------------------------------------------------------------------------------------
     // @ Tournament APIs
     // -----------------------------------------------------------------------------------------------------
