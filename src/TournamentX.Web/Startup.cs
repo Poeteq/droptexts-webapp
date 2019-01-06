@@ -10,6 +10,7 @@ using TournamentX.Infrastructure;
 using TournamentX.Web.Extensions;
 using TournamentX.Web.Filters;
 using TournamentX.Web.Middlewares;
+using TournamentX.Core.Config;
 
 namespace TournamentX.Web
 {
@@ -30,6 +31,11 @@ namespace TournamentX.Web
             services.AddDistributedMemoryCache();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<IRequestFieldExtractor, RequestFieldExtractor>();
+
+            TwilioConfig.AccountSid = Configuration["TwilioConfig:AccountSid"];
+            TwilioConfig.AuthToken = Configuration["TwilioConfig:AuthToken"];
+            TwilioConfig.PhoneNumber = Configuration["TwilioConfig:PhoneNumber"];
+
             services.AddSession(options =>
             {
                 // Set a short timeout for easy testing.
