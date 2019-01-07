@@ -5,13 +5,11 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using TournamentX.Web.Helpers;
 using TournamentX.Infrastructure;
 using TournamentX.Web.Extensions;
-using TournamentX.Web.Filters;
-using TournamentX.Web.Middlewares;
 using TournamentX.Core.Config;
-using Microsoft.AspNetCore.Hosting.Internal;
 
 namespace TournamentX.Web
 {
@@ -32,7 +30,6 @@ namespace TournamentX.Web
             services.AddDistributedMemoryCache();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<IRequestFieldExtractor, RequestFieldExtractor>();
-
             TwilioConfig.AccountSid = Configuration["TwilioConfig:AccountSid"];
             TwilioConfig.AuthToken = Configuration["TwilioConfig:AuthToken"];
             TwilioConfig.PhoneNumber = Configuration["TwilioConfig:PhoneNumber"];
@@ -55,13 +52,7 @@ namespace TournamentX.Web
                 options.ForwardedHeaders = ForwardedHeaders.XForwardedProto;
             });
 
-            services.AddMvc()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-                .ConfigureApiBehaviorOptions(options =>
-                {
-                    options.SuppressModelStateInvalidFilter = true;
-                });
-
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSpaStaticFiles(c =>
             {
                 //c.RootPath = "ClientApp/dist";
@@ -89,7 +80,6 @@ namespace TournamentX.Web
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
             app.UseSession();
-            app.UseMiddleware<CustomExceptionMiddleware>();
 
             app.UseMvc(routes =>
             {
@@ -110,6 +100,6 @@ namespace TournamentX.Web
 
         }
 
-
+        
     }
 }

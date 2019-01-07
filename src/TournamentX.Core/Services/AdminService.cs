@@ -1,9 +1,9 @@
 ﻿using TournamentX.Core.Interface;
+using TournamentX.Core.Entities;
 using TournamentX.Core.Models.Requests;
 using TournamentX.Core.Models.Responses;
-using TournamentX.Core.Models;
 
-namespace TournamentX.Core.Services
+namespace TournamentX.Core.Service
 {
     public class AdminService
     {
@@ -13,9 +13,25 @@ namespace TournamentX.Core.Services
             this.adminClient = adminClient;
         }
 
-        public Response<TxSessionCredentials> Login(AdminLoginRequest request)
+        public Response<UserIdentity> Login(AdminLoginRequest request)
         {
             return adminClient.Login(request);
         }
+
+        //public Response<UserIdentity> ValidateUser(string email, string token)
+        //{
+        //    TemporaryLoginRequest request = BuildValidateUserRequest(email, token);
+        //    return adminClient.ValidateUser(request);
+        //}
+
+        //private TemporaryLoginRequest BuildValidateUserRequest(string email, string token)
+        //{
+        //    return new TemporaryLoginRequest
+        //    {
+        //        Email = email,
+        //        AccessToken = token
+        //    };
+        //}
+
     }
 }

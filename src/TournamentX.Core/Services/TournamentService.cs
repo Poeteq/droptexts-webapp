@@ -6,7 +6,7 @@ using TournamentX.Core.Models.Responses;
 using TournamentX.Core.Validation;
 using TournamentX.Core.Models;
 
-namespace TournamentX.Core.Services
+namespace TournamentX.Core.Service
 {
     public class TournamentService
     {
@@ -76,11 +76,21 @@ namespace TournamentX.Core.Services
             return response;
         }
 
+        public Response<EmptyResponse> UpdateMatch(TxSessionCredentials credentials, string bracketId, UpdateMatchRequest request)
+        {
+            return tournamentClient.UpdateMatch(credentials, bracketId, request);
+        }
+
         public Response<GetLogsResponse> GetLogs(string tournamentId)
         {
             return tournamentClient.GetLogs(tournamentId);
         }
 
+        //public Response<GetAccessTokenResponse> GetAccessToken(TxSessionCredentials credentials, string tournamentId, string email, string name)
+        //{
+        //    GetAccessTokenRequest request = BuildGetAccessTokenRequest(email, name);
+        //    return tournamentClient.GetAccessToken(credentials, tournamentId, request);
+        //}
 
         public Response<EmptyResponse> SwapPlayers(TxSessionCredentials credentials, string tournamentId, string index1, string index2)
         {
@@ -92,9 +102,19 @@ namespace TournamentX.Core.Services
             return tournamentClient.AddPlayer(credentials, tournamentId, request);
         }
 
+        public Response<EmptyResponse> UpdatePlayer(TxSessionCredentials credentials, PlayerRequest request)
+        {
+            return tournamentClient.UpdatePlayer(credentials, request);
+        }
+
         public Response<EmptyResponse> DeletePlayer(TxSessionCredentials credentials, string tournamentId, int seed)
         {
             return tournamentClient.DeletePlayer(credentials, tournamentId, seed);
+        }
+
+        public Response<EmptyResponse> SendNotification(TxSessionCredentials credentials, string bracketId, string matchId, SendNotificationRequest request)
+        {
+            return tournamentClient.SendNotification(credentials, bracketId, matchId, request);
         }
 
         private GetAccessTokenRequest BuildGetAccessTokenRequest(string email, string name)

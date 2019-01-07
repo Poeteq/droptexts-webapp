@@ -7,7 +7,7 @@ namespace TournamentX.Core.Interface
 {
     public interface IOrganizerClient
     {
-        Response<TxSessionCredentials> TemporaryLogin(TemporaryLoginRequest request);
+        Response<UserIdentity> TemporaryLogin(TemporaryLoginRequest request);
         Response<GetAccessTokenResponse> GenerateTemporaryOrganizer(TxSessionCredentials credentials, GenerateTemporaryOrganizerRequest request);
         Response<GetTournamentIdsResponse> GetTemporaryOrganizerTournaments(TxSessionCredentials credentials);
     }
