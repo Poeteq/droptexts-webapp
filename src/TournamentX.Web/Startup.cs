@@ -11,6 +11,7 @@ using TournamentX.Web.Extensions;
 using TournamentX.Web.Filters;
 using TournamentX.Web.Middlewares;
 using TournamentX.Core.Config;
+using Microsoft.AspNetCore.Hosting.Internal;
 
 namespace TournamentX.Web
 {
@@ -43,11 +44,11 @@ namespace TournamentX.Web
                 options.Cookie.HttpOnly = true;
             });
 
-            services.AddHttpsRedirection(options =>
-            {
-                options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
-                options.HttpsPort = 443;
-            });
+            //services.AddHttpsRedirection(options =>
+            //{
+            //    options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
+            //    options.HttpsPort = 443;
+            //});
 
             services.Configure<ForwardedHeadersOptions>(options =>
             {
@@ -82,8 +83,8 @@ namespace TournamentX.Web
             }
 
             RequestFieldExtractor.Configure(app.ApplicationServices.GetRequiredService<IHttpContextAccessor>());
-            app.UseForwardedHeaders(RedirectToProxiedHttpsExtensions.GetForwardedHeadersOptions());
-            app.UseHttpsRedirection();
+            //app.UseForwardedHeaders(RedirectToProxiedHttpsExtensions.GetForwardedHeadersOptions());
+            //app.UseHttpsRedirection();
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();

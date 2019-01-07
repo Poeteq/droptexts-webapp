@@ -1,10 +1,12 @@
-import { Component, OnDestroy } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { MatDialog, MatSelectionList, MatListOption } from '@angular/material';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { TomAdminDialogComponent } from './admin-dialog/admin-dialog.component';
 import { HttpService } from '@app/core/services/http.service';
+import { TomUploadDialogComponent } from './upload-dialog/upload-dialog.component';
+import { SelectionModel } from '@angular/cdk/collections';
 
 @Component({
     selector: 'tom-access',
@@ -12,16 +14,25 @@ import { HttpService } from '@app/core/services/http.service';
     styleUrls: ['./access.component.scss']
 })
 
-export class TomAccessComponent implements OnDestroy
+export class TomAccessComponent implements OnDestroy, OnInit
 {
+    // @ViewChild(MatSelectionList) selectionList: MatSelectionList;
+
+
     // Public
     email: string;
     token: string;
     name: string;
+    message: string;
     errorMessage: string;
     hasError: boolean;
     isLoading: boolean;
     timeoutHandler: any;
+    fileNames: any = [];
+    selectedFile: string;
+    responseMessage: string;
+    errors: string[];
+    showResponse: boolean;
 
     // Private
     private _unsubscribeAll: Subject<any>;
@@ -43,6 +54,13 @@ export class TomAccessComponent implements OnDestroy
     // @ Lifecycle hooks
     // -----------------------------------------------------------------------------------------------------
 
+    ngOnInit(): void
+    {
+        // this.selectionList.selectedOptions = new SelectionModel<MatListOption>(false);
+
+        this.loadFiles();
+    }
+
     /**
      * On destroy
      */
@@ -56,18 +74,67 @@ export class TomAccessComponent implements OnDestroy
     // @ Public methods
     // -----------------------------------------------------------------------------------------------------
 
+    deleteFile(fileName)
+    {
+        this.httpService.deleteFile(fileName)
+        .then(success => {
+            this.loadFiles();
+        }, error => {
+            console.log(error);
+        });
+    }
+
+    onSelection(a, b)
+    {
+        console.log(a);
+        console.log(b);
+    }
+
+    getValue(event)
+    {
+        console.log(event.target.parentNode.innerText);
+        this.selectedFile = event.target.parentNode.innerText;
+    }
+
+    handleSelection(event)
+    {
+        if (event.option.selected)
+        {
+            event.source.deselectAll();
+            event.option._setSelected(true);
+        }
+    }
+
     /**
      * show admin menu
      */
     showMenu()
     {
-        const dialogRef = this.dialog.open(TomAdminDialogComponent, {
+        this.showResponse = false;
+        const dialogRef = this.dialog.open(TomUploadDialogComponent, {
             panelClass: 'admin-dialog',
         });
 
         dialogRef.afterClosed()
             .pipe(takeUntil(this._unsubscribeAll))
-            .subscribe();
+            .subscribe(() =>
+            {
+                this.loadFiles();
+            });
+    }
+
+    loadFiles()
+    {
+
+        this.httpService.getAllContacts()
+            .then(fileNames =>
+            {
+                this.fileNames = fileNames;
+                console.log(this.fileNames);
+            }, error =>
+            {
+                console.log(error);
+            })
     }
 
     /**
@@ -75,12 +142,26 @@ export class TomAccessComponent implements OnDestroy
      */
     attemptAccess(email, token)
     {
+        if (!this.selectedFile) {
+            return;
+        }
+
         this.isLoading = true;
-        let request = this.buildRequest(email, token);
-        this.httpService.bulkSend(request)
-            .then(response => {
+        let request = this.buildRequest(this.selectedFile, this.message);
+        console.log(request);
+        this.httpService.bulkSendToContacts(request)
+            .then(response =>
+            {
+                this.isLoading = false;
+                this.responseMessage = response.responseMessage;
+                this.errors = response.payload.errors;
+                this.showResponse = true;
                 console.log(response);
-            }, error => {
+            }, error =>
+            {
+                this.isLoading = false;
+                this.responseMessage = error.responseMessage;
+                this.errors = error.payload.errors;
                 console.log(error);
             });
         // this.httpService.login(request)
@@ -104,11 +185,11 @@ export class TomAccessComponent implements OnDestroy
         //     });
     }
 
-    private buildRequest(email, token) 
+    private buildRequest(fileName, message) 
     {
         return {
-            to: email,
-            body: token
+            fileName: fileName.trim(),
+            message: message
         };
     }
 }
