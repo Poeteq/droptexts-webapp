@@ -4,18 +4,21 @@ using TournamentX.Core.Entities;
 using TournamentX.Core.Models.Requests;
 using TournamentX.Core.Models.Responses;
 using TournamentX.Core.Models;
+using TournamentX.Core.Validation;
 
-namespace TournamentX.Core.Services
+namespace TournamentX.Core.Service
 {
     public class OrganizerService
     {
         IOrganizerClient orgClient;
-        public OrganizerService(IOrganizerClient orgClient)
+        ITournamentClient tournamentClient;
+        public OrganizerService(IOrganizerClient orgClient, ITournamentClient tournamentClient)
         {
             this.orgClient = orgClient;
+            this.tournamentClient = tournamentClient;
         }
         
-        public Response<TxSessionCredentials> TemporaryLogin(TemporaryLoginRequest request)
+        public Response<UserIdentity> TemporaryLogin(TemporaryLoginRequest request)
         {
             return orgClient.TemporaryLogin(request);
         }
@@ -25,7 +28,7 @@ namespace TournamentX.Core.Services
             if (user.IsAdmin) return null;
 
             Response<GetTournamentIdsResponse> response = orgClient.GetTemporaryOrganizerTournaments(user);
-            return response.Payload?.Tournaments;
+            return response.Payload == null ? null : response.Payload.Tournaments;
         }
 
         private List<Tournament> FilterUserTournaments(TxSessionCredentials user, IEnumerable<Tournament> tournaments)
@@ -44,9 +47,14 @@ namespace TournamentX.Core.Services
             return filteredTournaments;
         }
 
-        public Response<GetAccessTokenResponse> GetAccessToken(TxSessionCredentials credentials, GenerateTemporaryOrganizerRequest request)
+        public Response<GetTournamentsResponse> GetTournaments(TxSessionCredentials userCredentials)
         {
-            return orgClient.GenerateTemporaryOrganizer(credentials, request);
+            RequestPreconditions.CheckNotNull(userCredentials, "userCredentials");
+
+            Response<GetTournamentsResponse> response = tournamentClient.GetTournaments(userCredentials);
+            RequestPreconditions.CheckNotNull(response.Payload?.Tournaments, "tournaments");
+            response.Payload.Tournaments = FilterUserTournaments(userCredentials, response.Payload.Tournaments);
+            return response;
         }
     }
 }

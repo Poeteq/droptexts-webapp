@@ -1,7 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
+using TournamentX.Core.Interface;
+using TournamentX.Core.Entities;
+using TournamentX.Core.Service;
+using TournamentX.Core.Models.Requests;
+using TournamentX.Core.Models.Responses;
 using TournamentX.Web.Filters;
 using TournamentX.Web.Helpers;
-using TournamentX.Core.Models;
+using TournamentX.Core.Validation;
+using System.ComponentModel.DataAnnotations;
 
 namespace TournamentX.Web.Api
 {
@@ -9,34 +15,71 @@ namespace TournamentX.Web.Api
     [ApiController]
     public class UserController : ControllerBase
     {
-        #region Private
         private IRequestFieldExtractor requestFieldExtractor;
-        #endregion
+        private AdminService adminService;
+        private OrganizerService orgService;
 
-        #region Constructor
-        public UserController(IRequestFieldExtractor extractor = null)
+        public UserController(
+            IAdminClient adminClient,
+            IOrganizerClient orgClient,
+            ITournamentClient tournamentClient,
+            IRequestFieldExtractor extractor)
         {
-            requestFieldExtractor = extractor;
+            this.adminService = new AdminService(adminClient);
+            this.orgService = new OrganizerService(orgClient, tournamentClient);
+            this.requestFieldExtractor = extractor;
         }
-        #endregion
 
-        #region Actions
         [HttpGet("whoAmI")]
         [HandleException]
-        [ProducesResponseType(200, Type = typeof(TxSessionCredentials))]
-        public IActionResult GetUser()
+        [ProducesResponseType(200, Type = typeof(UserIdentity))]
+        public ActionResult<UserIdentity> GetUser()
         {
             return Ok(requestFieldExtractor.ExtractTomUserSessionCredentials());
         }
-     
+
+        [HttpPost("admin/login")]
+        [ValidateModel]
+        [HandleException]
+        [ProducesResponseType(200, Type = typeof(UserIdentity))]
+        public ActionResult<UserIdentity> AdminLogin([FromBody, Required] AdminLoginRequest request)
+        {
+            Response<UserIdentity> response = adminService.Login(request);
+            RequestPreconditions.CheckNotNull(response.Payload, "Payload");
+            response.Payload.Validate();
+            response.Payload.SetUser();
+            requestFieldExtractor.StoreTomUserSessionCredentials(response.Payload);
+            return Ok(response);
+        }
+
+        [HttpPost("tempOrganizer/login")]
+        [HandleException]
+        [ProducesResponseType(200, Type = typeof(UserIdentity))]
+        public ActionResult<UserIdentity> TempLogin([FromBody]TemporaryLoginRequest request)
+        {
+            Response<UserIdentity> response = orgService.TemporaryLogin(request);
+            RequestPreconditions.CheckNotNull(response.Payload, "Payload");
+            response.Payload.Validate();
+            requestFieldExtractor.StoreTomUserSessionCredentials(response.Payload);
+            return Ok(response);
+        }
+
+        [HttpGet("tournaments")]
+        [HandleException]
+        [ProducesResponseType(200, Type = typeof(Response<GetTournamentsResponse>))]
+        public ActionResult<Response<GetTournamentsResponse>> GetTournaments()
+        {
+            var response = orgService.GetTournaments(requestFieldExtractor.ExtractTomUserSessionCredentials());
+            return Ok(response);
+        }
+
         [HttpGet("logout")]
         [HandleException]
         [ProducesResponseType(200, Type = typeof(object))]
-        public IActionResult Logout()
+        public ActionResult<UserIdentity> Logout()
         {
             requestFieldExtractor.ClearTomUserSessionCredentials();
-            return Ok(requestFieldExtractor.ExtractTomUserSessionCredentials());
+            return Ok();
         }
-        #endregion
     }
 }

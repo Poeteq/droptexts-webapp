@@ -6,13 +6,7 @@ namespace TournamentX.Core.Models.Responses
     {
         public int ResponseCode { get; set; }
         public string ResponseMessage { get; set; }
-        public bool IsSuccessStatusCode
-        {
-            get
-            {
-                return ResponseCode == 1;
-            }
-        }
+        T _payload;
         public T Payload
         {
             get
@@ -21,53 +15,29 @@ namespace TournamentX.Core.Models.Responses
             }
             set
             {
-                _payload = value;
+                this._payload = value;
             }
         }
 
-        T _payload;
-
-        #region
         public Response() { }
         public Response(string message, int statusCode)
         {
-            ResponseMessage = message;
-            ResponseCode = statusCode;
-        }
-
-        public Response(T payload)
-        {
-            SetPayload(payload);
+            this.ResponseMessage = message;
+            this.ResponseCode = statusCode;
         }
 
         public Response(T payload, string message, int statusCode)
         {
-            SetPayload(payload);
-            ResponseMessage = message;
-            ResponseCode = statusCode;
+            this.SetPayload(payload);
+            this.ResponseMessage = message;
+            this.ResponseCode = statusCode;
         }
-        #endregion
 
-        #region
         public void SetPayload(T payload)
         {
             RequestPreconditions.CheckNotNull(payload, "payload");
-            Payload = payload;
+            this.Payload = payload;
         }
 
-        public Response<T> WithSuccess()
-        {
-            ResponseCode = 1;
-            ResponseMessage = "Success!";
-            return this;
-        }
-
-        public Response<T> WithPayload(T payload)
-        {
-            SetPayload(payload);
-            return this;
-        }
-
-        #endregion
     }
 }

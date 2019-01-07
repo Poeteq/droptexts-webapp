@@ -1,0 +1,3751 @@
+{
+  "TemporaryUser" : {
+    "-LPcsenYU3d1W3oKWTkx" : {
+      "Sessions" : {
+        "-LPdA2391VEaWWj-o5_-" : {
+          "isValid" : false,
+          "sessionCreated" : "2018-10-24T20:02:14.7697996-07:00"
+        },
+        "-LPdA4j_G6hUrjPEFtNj" : {
+          "isValid" : false,
+          "sessionCreated" : "2018-10-24T20:02:25.731879-07:00"
+        },
+        "-LPdAM_rgZOzhLe0_H2t" : {
+          "isValid" : true,
+          "sessionCreated" : "2018-10-24T20:03:38.6675265-07:00"
+        }
+      },
+      "accessToken" : "mk58rc",
+      "currentSession" : "-LPdAM_rgZOzhLe0_H2t",
+      "email" : "cesartejada86@yahoo.com",
+      "isValid" : true,
+      "name" : "Cesart Tejada",
+      "tournaments" : [ "-LCNCOfR1GGXCjdmg0vF", "-LPTV3c3l4fiU6wTIAmG", "tid123" ]
+    },
+    "-LPd0sOKTpfNFlOpH9jo" : {
+      "accessToken" : "hnwrac",
+      "email" : "tontin@google.com",
+      "isValid" : true,
+      "name" : "moises",
+      "tournaments" : [ "fadfafgaga" ]
+    },
+    "-LPd0yZOHdisO8m75WZP" : {
+      "accessToken" : "jjmljn",
+      "email" : "tontin@go.com",
+      "isValid" : true,
+      "name" : "moises",
+      "tournaments" : [ "fadfafgaga" ]
+    }
+  },
+  "events" : {
+    "-LCCGeRBS9iEMSrNZoJb" : {
+      "eventName" : "CC Masters Series",
+      "tournaments" : {
+        "-LCCNC1oRW4AbSFnlh8T" : true,
+        "-LCL8HzV5ac8Dvs7ROlh" : true,
+        "-LCNNToKCLo4EcYbuRWC" : true,
+        "-LCRe0G9opPRJueT4u9N" : true
+      }
+    },
+    "-LCNCLhccXUeqg8XTJ1F" : {
+      "eventName" : "Tokyo Game Show",
+      "tournaments" : {
+        "-LCNCOfR1GGXCjdmg0vF" : true
+      }
+    },
+    "-LJk33qC8ew78wR0850h" : {
+      "eventName" : "Local Tourny"
+    },
+    "-LKQ5UZtU64lnSyq92lu" : {
+      "eventName" : "SCR"
+    },
+    "-LKQBr16lMkU7qQfZ9Yj" : {
+      "eventName" : "Event ModAl"
+    },
+    "-LKQCAchrBsgcNWOKY6Q" : {
+      "eventName" : "Hawaiian Jam"
+    },
+    "-LKQDklk4giK1HINO7dS" : {
+      "eventName" : "Event abc"
+    },
+    "-LOAulyRK3K17O3n8Cek" : {
+      "eventName" : "yolo",
+      "tournaments" : {
+        "-LOAusN0zPW1IIVstu5R" : true,
+        "-LOMV6t_QFFTEafduZv2" : true,
+        "-LOlERA7-kc8UTwXhJPK" : true,
+        "-LOlFw8jYvSTDRJUdjCb" : true,
+        "-LOvSlZTTrEhiOfl5JnP" : true,
+        "-LOvTrjYCChTCbKGhK0Q" : true,
+        "-LOvUpPzy1yGbJSGJgKB" : true
+      }
+    }
+  },
+  "tournaments" : {
+    "-LCCNC1oRW4AbSFnlh8T" : {
+      "complete" : true,
+      "eventId" : "-LCCGeRBS9iEMSrNZoJb",
+      "live" : false,
+      "players" : [ {
+        "name" : "Fujimura",
+        "seed" : 1
+      }, {
+        "name" : "CCG LapChi",
+        "seed" : 2
+      }, {
+        "name" : "Verloren",
+        "seed" : 3
+      }, {
+        "name" : "GAM | Caba",
+        "seed" : 4
+      }, {
+        "name" : "NL",
+        "seed" : 5
+      }, {
+        "name" : "Phenom",
+        "seed" : 6
+      }, {
+        "name" : "CYG Fuudo",
+        "seed" : 7
+      }, {
+        "name" : "Chris T",
+        "seed" : 8
+      }, {
+        "name" : "NuckleDu",
+        "seed" : 9
+      }, {
+        "name" : "CYG Daigo",
+        "seed" : 10
+      }, {
+        "name" : "RB | Bonchan",
+        "seed" : 11
+      }, {
+        "name" : "Nishiken",
+        "seed" : 12
+      }, {
+        "name" : "Tokido",
+        "seed" : 13
+      }, {
+        "name" : "Momochi",
+        "seed" : 14
+      }, {
+        "name" : "Infiltration",
+        "seed" : 15
+      }, {
+        "name" : "MenaRD",
+        "seed" : 16
+      }, {
+        "name" : "Sako",
+        "seed" : 17
+      } ],
+      "queue" : {
+        "-LNs_czczZ5kqDJ-sKxs" : {
+          "console" : 0,
+          "matchIndex" : 1,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 17,
+          "player1" : {
+            "name" : "Fujimura",
+            "seed" : 1
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d-3abejzpyPFAIQ" : {
+          "console" : 0,
+          "matchIndex" : 2,
+          "matchNumber" : 1,
+          "nextMatchIndex" : 17,
+          "player1" : {
+            "name" : "MenaRD",
+            "seed" : 16
+          },
+          "player1Score" : 1,
+          "player2" : {
+            "name" : "Sako",
+            "seed" : 17
+          },
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d-U56GQQd-mVqqi" : {
+          "console" : 0,
+          "matchIndex" : 3,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 18,
+          "player1" : {
+            "name" : "NL",
+            "seed" : 8
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d0CKiEpuXVu-afF" : {
+          "console" : 0,
+          "matchIndex" : 4,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 18,
+          "player1" : {
+            "name" : "Phenom",
+            "seed" : 9
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d0y_ckmpEKZVm3s" : {
+          "console" : 0,
+          "matchIndex" : 5,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 19,
+          "player1" : {
+            "name" : "CYG Fuudo",
+            "seed" : 4
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d1asfg_99EKh7RC" : {
+          "console" : 0,
+          "matchIndex" : 6,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 19,
+          "player1" : {
+            "name" : "Tokido",
+            "seed" : 13
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d1ppEyDgAo3vBMN" : {
+          "console" : 0,
+          "matchIndex" : 7,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 20,
+          "player1" : {
+            "name" : "CCG LapChi",
+            "seed" : 5
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d2gi3EpdEnHeIni" : {
+          "console" : 0,
+          "matchIndex" : 9,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 21,
+          "player1" : {
+            "name" : "NuckleDu",
+            "seed" : 2
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d2h7NExJgPPs5dC" : {
+          "console" : 0,
+          "matchIndex" : 8,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 20,
+          "player1" : {
+            "name" : "Nishiken",
+            "seed" : 12
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d3U1Jd7S6LhzKdr" : {
+          "console" : 0,
+          "matchIndex" : 10,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 21,
+          "player1" : {
+            "name" : "Infiltration",
+            "seed" : 15
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d4A3SFnijW8iBj1" : {
+          "console" : 0,
+          "matchIndex" : 11,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 22,
+          "player1" : {
+            "name" : "GAM | Caba",
+            "seed" : 7
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d8lhg6TXiPEB74O" : {
+          "console" : 0,
+          "matchIndex" : 12,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 22,
+          "player1" : {
+            "name" : "Chris T",
+            "seed" : 10
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_d99ZkJr_kw8Ps-c" : {
+          "console" : 0,
+          "matchIndex" : 13,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 23,
+          "player1" : {
+            "name" : "CYG Daigo",
+            "seed" : 3
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_dACjSgPRNaFkDZH" : {
+          "console" : 0,
+          "matchIndex" : 14,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 23,
+          "player1" : {
+            "name" : "Momochi",
+            "seed" : 14
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_dBORuo5pjQHrlOu" : {
+          "console" : 0,
+          "matchIndex" : 15,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 24,
+          "player1" : {
+            "name" : "Verloren",
+            "seed" : 6
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_dC-RkpMsvAJV4K6" : {
+          "console" : 0,
+          "matchIndex" : 16,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 24,
+          "player1" : {
+            "name" : "RB | Bonchan",
+            "seed" : 11
+          },
+          "player1Score" : 0,
+          "player2Score" : 0,
+          "round" : 1,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_dCT_mN2uop9bhIx" : {
+          "console" : 0,
+          "matchIndex" : 17,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 25,
+          "player1" : {
+            "name" : "Fujimura",
+            "seed" : 1
+          },
+          "player1Score" : 1,
+          "player2" : {
+            "name" : "MenaRD",
+            "seed" : 16
+          },
+          "player2Score" : 0,
+          "round" : 2,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_dDG2chHbvLJv3Go" : {
+          "console" : 0,
+          "matchIndex" : 18,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 25,
+          "player1" : {
+            "name" : "NL",
+            "seed" : 8
+          },
+          "player1Score" : 0,
+          "player2" : {
+            "name" : "Phenom",
+            "seed" : 9
+          },
+          "player2Score" : 1,
+          "round" : 2,
+          "state" : "complete",
+          "station" : 0
+        },
+        "-LNs_dDIwA3GuFGUxD43" : {
+          "console" : 0,
+          "matchIndex" : 19,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 26,
+          "player1" : {
+            "name" : "CYG Fuudo",
+            "seed" : 4
+          },
+          "player1Score" : 0,
+          "player2" : {
+            "name" : "Tokido",
+            "seed" : 13
+          },
+          "player2Score" : 0,
+          "round" : 2,
+          "state" : "live",
+          "station" : 0
+        },
+        "-LNs_dEBA7hZO2Y29xI1" : {
+          "console" : 0,
+          "matchIndex" : 20,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 26,
+          "player1" : {
+            "name" : "CCG LapChi",
+            "seed" : 5
+          },
+          "player1Score" : 0,
+          "player2" : {
+            "name" : "Nishiken",
+            "seed" : 12
+          },
+          "player2Score" : 0,
+          "round" : 2,
+          "state" : "live",
+          "station" : 0
+        },
+        "-LNs_dFGQzM37uEI7nOA" : {
+          "console" : 0,
+          "matchIndex" : 21,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 27,
+          "player1" : {
+            "name" : "NuckleDu",
+            "seed" : 2
+          },
+          "player1Score" : 0,
+          "player2" : {
+            "name" : "Infiltration",
+            "seed" : 15
+          },
+          "player2Score" : 0,
+          "round" : 2,
+          "state" : "live",
+          "station" : 0
+        },
+        "-LNs_dFmy1ieBKj4Jrlx" : {
+          "console" : 0,
+          "matchIndex" : 22,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 27,
+          "player1" : {
+            "name" : "GAM | Caba",
+            "seed" : 7
+          },
+          "player1Score" : 0,
+          "player2" : {
+            "name" : "Chris T",
+            "seed" : 10
+          },
+          "player2Score" : 0,
+          "round" : 2,
+          "state" : "live",
+          "station" : 0
+        },
+        "-LNs_dGMVlimNRcJ5mPG" : {
+          "console" : 0,
+          "matchIndex" : 23,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 28,
+          "player1" : {
+            "name" : "CYG Daigo",
+            "seed" : 3
+          },
+          "player1Score" : 0,
+          "player2" : {
+            "name" : "Momochi",
+            "seed" : 14
+          },
+          "player2Score" : 0,
+          "round" : 2,
+          "state" : "live",
+          "station" : 0
+        },
+        "-LNs_dH09HtwWprt9rMd" : {
+          "console" : 0,
+          "matchIndex" : 24,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 28,
+          "player1" : {
+            "name" : "Verloren",
+            "seed" : 6
+          },
+          "player1Score" : 0,
+          "player2" : {
+            "name" : "RB | Bonchan",
+            "seed" : 11
+          },
+          "player2Score" : 0,
+          "round" : 2,
+          "state" : "live",
+          "station" : 0
+        },
+        "-LNs_s6B5A-z2ayixfBG" : {
+          "console" : 0,
+          "matchIndex" : 25,
+          "matchNumber" : 0,
+          "nextMatchIndex" : 29,
+          "player1" : {
+            "name" : "Fujimura",
+            "seed" : 1
+          },
+          "player1Score" : 0,
+          "player2" : {
+            "name" : "Phenom",
+            "seed" : 9
+          },
+          "player2Score" : 0,
+          "round" : 3,
+          "state" : "live",
+          "station" : 0
+        }
+      },
+      "state" : "Open",
+      "tournamentName" : "CCup"
+    },
+    "-LCNCOfR1GGXCjdmg0vF" : {
+      "FinalBrackets" : {
+        "-LPYdmzvKQ4TGyPw2gev" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 62,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 63,
+            "player1PlaceHolderText" : "Winner of match 60",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 61",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 63,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 0,
+            "player1PlaceHolderText" : "Winner of match 62",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 62",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 1,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        }
+      },
+      "Logs" : {
+        "-LPV3pFcCDVcgEOFlTNK" : {
+          "actionSaveInFirebase" : true,
+          "appliedBy" : "Jason or Me",
+          "chainOfEvents" : [ {
+            "appliedBy" : "Jason or Me",
+            "date" : "2018-10-23T08:38:32.8113367+00:00",
+            "logSequence" : 2,
+            "matchNumber" : 26,
+            "message" : "Yib, winner from match 20 has advanced to winner's round 3",
+            "newMatchStatus" : 3,
+            "newStateName" : "awaiting",
+            "pastMatchStatus" : 5,
+            "pastStateName" : "pending",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          }, {
+            "appliedBy" : "Jason or Me",
+            "date" : "2018-10-23T08:38:32.8113394+00:00",
+            "logSequence" : 3,
+            "matchNumber" : 44,
+            "message" : "Andrei,  has been sent to loser's round 2",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 4,
+            "typeName" : "Add loser from previous match."
+          } ],
+          "code" : 1,
+          "date" : "2018-10-23T08:38:32.8113283+00:00",
+          "logSequence" : 1,
+          "matchNumber" : 20,
+          "message" : "Yib has beat Andrei",
+          "newMatchStatus" : 1,
+          "newStateName" : "complete",
+          "pastMatchStatus" : 2,
+          "pastStateName" : "ready",
+          "type" : 12,
+          "typeName" : "Match has selected a winner."
+        },
+        "-LPV3zmvbGJsIPix_RVq" : {
+          "actionSaveInFirebase" : true,
+          "appliedBy" : "Jason or Me",
+          "chainOfEvents" : [ {
+            "appliedBy" : "Jason or Me",
+            "date" : "2018-10-23T08:39:15.9796517+00:00",
+            "logSequence" : 2,
+            "matchNumber" : 50,
+            "message" : "Brandon, winner from match 44 has advanced to loser's round 3",
+            "newMatchStatus" : 3,
+            "newStateName" : "awaiting",
+            "pastMatchStatus" : 5,
+            "pastStateName" : "pending",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          } ],
+          "code" : 1,
+          "date" : "2018-10-23T08:39:15.9796397+00:00",
+          "logSequence" : 1,
+          "matchNumber" : 44,
+          "message" : "Brandon has beat Andrei",
+          "newMatchStatus" : 1,
+          "newStateName" : "complete",
+          "pastMatchStatus" : 2,
+          "pastStateName" : "ready",
+          "type" : 12,
+          "typeName" : "Match has selected a winner."
+        },
+        "-LPV447Io3GL7VSL7Nj8" : {
+          "actionSaveInFirebase" : true,
+          "appliedBy" : "Jason or Me",
+          "chainOfEvents" : [ {
+            "appliedBy" : "Jason or Me",
+            "date" : "2018-10-23T08:39:37.8262118+00:00",
+            "logSequence" : 2,
+            "matchNumber" : 27,
+            "message" : "Alberto, winner from match 21 has advanced to winner's round 3",
+            "newMatchStatus" : 3,
+            "newStateName" : "awaiting",
+            "pastMatchStatus" : 5,
+            "pastStateName" : "pending",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          }, {
+            "appliedBy" : "Jason or Me",
+            "chainOfEvents" : [ {
+              "appliedBy" : "Jason or Me",
+              "date" : "2018-10-23T08:39:37.8262156+00:00",
+              "logSequence" : 4,
+              "matchNumber" : 49,
+              "message" : "CEsar, winner from match 43 has advanced to loser's round 3",
+              "newMatchStatus" : 3,
+              "newStateName" : "awaiting",
+              "pastMatchStatus" : 5,
+              "pastStateName" : "pending",
+              "type" : 3,
+              "typeName" : "Add  winner from previous match."
+            } ],
+            "date" : "2018-10-23T08:39:37.8262143+00:00",
+            "logSequence" : 3,
+            "matchNumber" : 43,
+            "message" : "CEsar,  has been sent to loser's round 2",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 4,
+            "typeName" : "Add loser from previous match."
+          } ],
+          "code" : 1,
+          "date" : "2018-10-23T08:39:37.8262042+00:00",
+          "logSequence" : 1,
+          "matchNumber" : 21,
+          "message" : "Alberto has beat CEsar",
+          "newMatchStatus" : 1,
+          "newStateName" : "complete",
+          "pastMatchStatus" : 2,
+          "pastStateName" : "ready",
+          "type" : 12,
+          "typeName" : "Match has selected a winner."
+        },
+        "-LPYdpap8yS2fOFZe2i8" : {
+          "actionSaveInFirebase" : true,
+          "appliedBy" : "Jason or Me",
+          "chainOfEvents" : [ {
+            "appliedBy" : "Jason or Me",
+            "date" : "2018-10-24T01:19:05.0304706+00:00",
+            "logSequence" : 2,
+            "matchNumber" : 21,
+            "message" : "Sandy, winner from match 10 has advanced to winner's round 2",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          }, {
+            "appliedBy" : "Jason or Me",
+            "chainOfEvents" : [ {
+              "appliedBy" : "Jason or Me",
+              "date" : "2018-10-24T01:19:05.0322197+00:00",
+              "logSequence" : 4,
+              "matchNumber" : 44,
+              "message" : "John, winner from match 36 has advanced to loser's round 2",
+              "newMatchStatus" : 3,
+              "newStateName" : "awaiting",
+              "pastMatchStatus" : 5,
+              "pastStateName" : "pending",
+              "type" : 3,
+              "typeName" : "Add  winner from previous match."
+            } ],
+            "date" : "2018-10-24T01:19:05.032214+00:00",
+            "logSequence" : 3,
+            "matchNumber" : 36,
+            "message" : "John,  has been sent to loser's round 1",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 4,
+            "typeName" : "Add loser from previous match."
+          } ],
+          "code" : 1,
+          "date" : "2018-10-24T01:19:05.0266175+00:00",
+          "logSequence" : 1,
+          "matchNumber" : 10,
+          "message" : "Sandy has beat John",
+          "newMatchStatus" : 1,
+          "newStateName" : "complete",
+          "pastMatchStatus" : 2,
+          "pastStateName" : "ready",
+          "type" : 12,
+          "typeName" : "Match has selected a winner."
+        },
+        "-LP_3HFNF9N1sflq53sc" : {
+          "actionSaveInFirebase" : true,
+          "appliedBy" : "Jason or Me",
+          "chainOfEvents" : [ {
+            "appliedBy" : "Jason or Me",
+            "date" : "2018-10-24T07:54:15.4814381+00:00",
+            "logSequence" : 2,
+            "matchNumber" : 17,
+            "message" : "Sambu, winner from match 2 has advanced to winner's round 2",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          }, {
+            "appliedBy" : "Jason or Me",
+            "chainOfEvents" : [ {
+              "appliedBy" : "Jason or Me",
+              "date" : "2018-10-24T07:54:15.4830968+00:00",
+              "logSequence" : 4,
+              "matchNumber" : 40,
+              "message" : "Alberto, winner from match 32 has advanced to loser's round 2",
+              "newMatchStatus" : 3,
+              "newStateName" : "awaiting",
+              "pastMatchStatus" : 5,
+              "pastStateName" : "pending",
+              "type" : 3,
+              "typeName" : "Add  winner from previous match."
+            } ],
+            "date" : "2018-10-24T07:54:15.4830913+00:00",
+            "logSequence" : 3,
+            "matchNumber" : 32,
+            "message" : "Alberto,  has been sent to loser's round 1",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 4,
+            "typeName" : "Add loser from previous match."
+          } ],
+          "code" : 1,
+          "date" : "2018-10-24T07:54:15.4791865+00:00",
+          "logSequence" : 1,
+          "matchNumber" : 2,
+          "message" : "Sambu has beat Alberto",
+          "newMatchStatus" : 1,
+          "newStateName" : "complete",
+          "pastMatchStatus" : 2,
+          "pastStateName" : "ready",
+          "type" : 12,
+          "typeName" : "Match has selected a winner."
+        },
+        "-LP_3Iq34XS803oG8dTW" : {
+          "actionSaveInFirebase" : true,
+          "appliedBy" : "Jason or Me",
+          "chainOfEvents" : [ {
+            "appliedBy" : "Jason or Me",
+            "date" : "2018-10-24T07:54:22.1130198+00:00",
+            "logSequence" : 2,
+            "matchNumber" : 25,
+            "message" : "Jason, winner from match 17 has advanced to winner's round 3",
+            "newMatchStatus" : 3,
+            "newStateName" : "awaiting",
+            "pastMatchStatus" : 5,
+            "pastStateName" : "pending",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          }, {
+            "appliedBy" : "Jason or Me",
+            "chainOfEvents" : [ {
+              "appliedBy" : "Jason or Me",
+              "date" : "2018-10-24T07:54:22.1130326+00:00",
+              "logSequence" : 4,
+              "matchNumber" : 51,
+              "message" : "Sambu, winner from match 47 has advanced to loser's round 3",
+              "newMatchStatus" : 3,
+              "newStateName" : "awaiting",
+              "pastMatchStatus" : 5,
+              "pastStateName" : "pending",
+              "type" : 3,
+              "typeName" : "Add  winner from previous match."
+            } ],
+            "date" : "2018-10-24T07:54:22.1130309+00:00",
+            "logSequence" : 3,
+            "matchNumber" : 47,
+            "message" : "Sambu,  has been sent to loser's round 2",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 4,
+            "typeName" : "Add loser from previous match."
+          } ],
+          "code" : 1,
+          "date" : "2018-10-24T07:54:22.1130118+00:00",
+          "logSequence" : 1,
+          "matchNumber" : 17,
+          "message" : "Jason has beat Sambu",
+          "newMatchStatus" : 1,
+          "newStateName" : "complete",
+          "pastMatchStatus" : 2,
+          "pastStateName" : "ready",
+          "type" : 12,
+          "typeName" : "Match has selected a winner."
+        },
+        "-LP_3MFF5h5wv4fP_DHJ" : {
+          "actionSaveInFirebase" : true,
+          "appliedBy" : "Jason or Me",
+          "chainOfEvents" : [ {
+            "appliedBy" : "Jason or Me",
+            "chainOfEvents" : [ {
+              "appliedBy" : "Jason or Me",
+              "date" : "2018-10-24T00:54:33.792058-07:00",
+              "logSequence" : 3,
+              "matchNumber" : 25,
+              "message" : "Jason has been removed from match number 25",
+              "newMatchStatus" : 3,
+              "newStateName" : "awaiting",
+              "pastMatchStatus" : 3,
+              "pastStateName" : "awaiting",
+              "type" : 3,
+              "typeName" : "Add  winner from previous match."
+            }, {
+              "appliedBy" : "Jason or Me",
+              "chainOfEvents" : [ {
+                "appliedBy" : "Jason or Me",
+                "date" : "2018-10-24T00:54:33.7958797-07:00",
+                "logSequence" : 5,
+                "matchNumber" : 51,
+                "message" : "Sambu has been removed from match number 51",
+                "newMatchStatus" : 3,
+                "newStateName" : "awaiting",
+                "pastMatchStatus" : 3,
+                "pastStateName" : "awaiting",
+                "type" : 3,
+                "typeName" : "Add  winner from previous match."
+              } ],
+              "date" : "2018-10-24T00:54:33.7958713-07:00",
+              "logSequence" : 4,
+              "matchNumber" : 47,
+              "message" : "Sambu has been removed from match number 47",
+              "newMatchStatus" : 3,
+              "newStateName" : "awaiting",
+              "pastMatchStatus" : 1,
+              "pastStateName" : "complete",
+              "type" : 3,
+              "typeName" : "Add  winner from previous match."
+            } ],
+            "date" : "2018-10-24T00:54:33.791799-07:00",
+            "logSequence" : 2,
+            "matchNumber" : 17,
+            "message" : "Sambu has been removed from match number 17",
+            "newMatchStatus" : 3,
+            "newStateName" : "awaiting",
+            "pastMatchStatus" : 1,
+            "pastStateName" : "complete",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          }, {
+            "appliedBy" : "Jason or Me",
+            "chainOfEvents" : [ {
+              "appliedBy" : "Jason or Me",
+              "date" : "2018-10-24T00:54:33.7976419-07:00",
+              "logSequence" : 7,
+              "matchNumber" : 40,
+              "message" : "Alberto has been removed from match number 40",
+              "newMatchStatus" : 3,
+              "newStateName" : "awaiting",
+              "pastMatchStatus" : 3,
+              "pastStateName" : "awaiting",
+              "type" : 3,
+              "typeName" : "Add  winner from previous match."
+            } ],
+            "date" : "2018-10-24T00:54:33.7976356-07:00",
+            "logSequence" : 6,
+            "matchNumber" : 32,
+            "message" : "Alberto has been removed from match number 32",
+            "newMatchStatus" : 3,
+            "newStateName" : "awaiting",
+            "pastMatchStatus" : 1,
+            "pastStateName" : "complete",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          } ],
+          "code" : 1,
+          "date" : "2018-10-24T00:54:33.7868947-07:00",
+          "logSequence" : 1,
+          "matchNumber" : 2,
+          "message" : "Match number 2 has been reverted.",
+          "newMatchStatus" : 2,
+          "newStateName" : "ready",
+          "pastMatchStatus" : 1,
+          "pastStateName" : "complete",
+          "type" : 11,
+          "typeName" : "Reverted Match."
+        }
+      },
+      "LoserBrackets" : {
+        "-LPYdmwjX8h8YTIj9iZ9" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 34,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 42,
+            "player1PlaceHolderText" : "Loser of match 5",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 6",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 42,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 49,
+            "player1PlaceHolderText" : "Loser of match 22",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 34",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 4,
+          "round" : 1,
+          "setIndex" : 9,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwjX8h8YTIj9iZA" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 38,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 46,
+            "player1PlaceHolderText" : "Loser of match 13",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 14",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 46,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 51,
+            "player1PlaceHolderText" : "Loser of match 18",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 38",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 6,
+          "round" : 1,
+          "setIndex" : 13,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwjX8h8YTIj9iZB" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 39,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 47,
+            "player1PlaceHolderText" : "Loser of match 15",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 16",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 47,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 51,
+            "player1PlaceHolderText" : "Loser of match 17",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 39",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 6,
+          "round" : 1,
+          "setIndex" : 14,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwlS455QRP1uAOi" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 51,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 55,
+            "player1PlaceHolderText" : "Winner of match 46",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 47",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 55,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 57,
+            "player1PlaceHolderText" : "Loser of match 28",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 51",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 2,
+          "round" : 2,
+          "setIndex" : 6,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwmXIAwO7KeEg6F" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 35,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 43,
+            "player1PlaceHolderText" : "Loser of match 7",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 8",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 43,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 49,
+            "player1PlaceHolderText" : "Loser of match 21",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 35",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 4,
+          "round" : 1,
+          "setIndex" : 10,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwogjIpgFUmgcX3" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 36,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 44,
+            "player1PlaceHolderText" : "Loser of match 9",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "John",
+              "seed" : 15
+            },
+            "player2PlaceHolderText" : "Loser of match 10",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "John",
+              "seed" : 15
+            },
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 44,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 50,
+            "player1PlaceHolderText" : "Loser of match 20",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "John",
+              "seed" : 15
+            },
+            "player2PlaceHolderText" : "Winner of match 36",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 5,
+          "round" : 1,
+          "setIndex" : 11,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwq-Ha7C7eyu-PY" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 50,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 54,
+            "player1PlaceHolderText" : "Winner of match 44",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 45",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 54,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 57,
+            "player1PlaceHolderText" : "Loser of match 27",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 50",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 2,
+          "round" : 2,
+          "setIndex" : 5,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwshm7PJ41M-R5k" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 32,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 40,
+            "player1PlaceHolderText" : "Loser of match 1",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 2",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 40,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 48,
+            "player1PlaceHolderText" : "Loser of match 24",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 32",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 3,
+          "round" : 1,
+          "setIndex" : 7,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwu1RYblBPLT67v" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 56,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 58,
+            "player1PlaceHolderText" : "Winner of match 52",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 53",
+            "player2Score" : 0,
+            "round" : 5,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 58,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 60,
+            "player1PlaceHolderText" : "Loser of match 30",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 56",
+            "player2Score" : 0,
+            "round" : 6,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 3,
+          "setIndex" : 1,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwv-Epbpd2hlDwp" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 57,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 59,
+            "player1PlaceHolderText" : "Winner of match 54",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 55",
+            "player2Score" : 0,
+            "round" : 5,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 59,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 60,
+            "player1PlaceHolderText" : "Loser of match 29",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 57",
+            "player2Score" : 0,
+            "round" : 6,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 3,
+          "setIndex" : 2,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwyxNEweesf-ABf" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 37,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 45,
+            "player1PlaceHolderText" : "Loser of match 11",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 12",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 45,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 50,
+            "player1PlaceHolderText" : "Loser of match 19",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 37",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 5,
+          "round" : 1,
+          "setIndex" : 12,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmwzlYI57PlGP4GF" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 33,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 41,
+            "player1PlaceHolderText" : "Loser of match 3",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 4",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 41,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 48,
+            "player1PlaceHolderText" : "Loser of match 23",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 33",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 3,
+          "round" : 1,
+          "setIndex" : 8,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmx1UnRTjU-H8Nw2" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 60,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 61,
+            "player1PlaceHolderText" : "Winner of match 58",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 59",
+            "player2Score" : 0,
+            "round" : 7,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 61,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 62,
+            "player1PlaceHolderText" : "Loser of match 31",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 60",
+            "player2Score" : 0,
+            "round" : 8,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 4,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmx321RWeNCbiuzI" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 48,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 52,
+            "player1PlaceHolderText" : "Winner of match 40",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 41",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 52,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 56,
+            "player1PlaceHolderText" : "Loser of match 26",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 48",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 1,
+          "round" : 2,
+          "setIndex" : 3,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmx321RWeNCbiuzJ" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 49,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 53,
+            "player1PlaceHolderText" : "Winner of match 42",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 43",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 53,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 56,
+            "player1PlaceHolderText" : "Loser of match 25",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 49",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 1,
+          "round" : 2,
+          "setIndex" : 4,
+          "state" : 5,
+          "stateName" : "pending"
+        }
+      },
+      "WinnerBrackets" : {
+        "-LPYdmt2Q8uVWmxfHJv4" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 3,
+            "nextLoserMatchNumber" : 33,
+            "nextLoserMatchSetIndex" : 8,
+            "nextMatchNumber" : 18,
+            "player1" : {
+              "name" : "Patil",
+              "seed" : 8
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Patil",
+              "seed" : 8
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 8,
+          "round" : 1,
+          "setIndex" : 17,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmt2Q8uVWmxfHJv5" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 4,
+            "nextLoserMatchNumber" : 33,
+            "nextLoserMatchSetIndex" : 8,
+            "nextMatchNumber" : 18,
+            "player1" : {
+              "name" : "Poorvi",
+              "seed" : 9
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Poorvi",
+              "seed" : 9
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 8,
+          "round" : 1,
+          "setIndex" : 18,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmt5_WBDI9bLbiTp" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 2,
+            "nextLoserMatchNumber" : 32,
+            "nextLoserMatchSetIndex" : 7,
+            "nextMatchNumber" : 17,
+            "player1" : {
+              "name" : "Alberto",
+              "seed" : 16
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Sambu",
+              "seed" : 17
+            },
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 7,
+          "round" : 1,
+          "setIndex" : 16,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPYdmt79GVUsbp_0ova" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 8,
+            "nextLoserMatchNumber" : 35,
+            "nextLoserMatchSetIndex" : 10,
+            "nextMatchNumber" : 20,
+            "player1" : {
+              "name" : "Simon",
+              "seed" : 12
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Simon",
+              "seed" : 12
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 10,
+          "round" : 1,
+          "setIndex" : 22,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmt8wt6wm6oDN35N" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 7,
+            "nextLoserMatchNumber" : 35,
+            "nextLoserMatchSetIndex" : 10,
+            "nextMatchNumber" : 20,
+            "player1" : {
+              "name" : "Ebrahim",
+              "seed" : 5
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Ebrahim",
+              "seed" : 5
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 10,
+          "round" : 1,
+          "setIndex" : 21,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtBQejF-5PD2TjL" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 24,
+            "nextLoserMatchNumber" : 40,
+            "nextLoserMatchSetIndex" : 7,
+            "nextMatchNumber" : 28,
+            "player1" : {
+              "name" : "Marc",
+              "seed" : 6
+            },
+            "player1PlaceHolderText" : "Winner of match 15",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Suji",
+              "seed" : 11
+            },
+            "player2PlaceHolderText" : "Winner of match 16",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 6,
+          "round" : 2,
+          "setIndex" : 14,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPYdmtBQejF-5PD2TjM" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 1,
+            "nextLoserMatchNumber" : 32,
+            "nextLoserMatchSetIndex" : 7,
+            "nextMatchNumber" : 17,
+            "player1" : {
+              "name" : "Jason",
+              "seed" : 1
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Jason",
+              "seed" : 1
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 7,
+          "round" : 1,
+          "setIndex" : 15,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtBQejF-5PD2TjN" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 6,
+            "nextLoserMatchNumber" : 34,
+            "nextLoserMatchSetIndex" : 9,
+            "nextMatchNumber" : 19,
+            "player1" : {
+              "name" : "Brandon",
+              "seed" : 13
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Brandon",
+              "seed" : 13
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 9,
+          "round" : 1,
+          "setIndex" : 20,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtDbB8n6zgkbmYV" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 22,
+            "nextLoserMatchNumber" : 42,
+            "nextLoserMatchSetIndex" : 9,
+            "nextMatchNumber" : 27,
+            "player1" : {
+              "name" : "Dipak",
+              "seed" : 7
+            },
+            "player1PlaceHolderText" : "Winner of match 11",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Andrei",
+              "seed" : 10
+            },
+            "player2PlaceHolderText" : "Winner of match 12",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 5,
+          "round" : 2,
+          "setIndex" : 12,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPYdmtFrCKJzmE1h_IK" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 23,
+            "nextLoserMatchNumber" : 41,
+            "nextLoserMatchSetIndex" : 8,
+            "nextMatchNumber" : 28,
+            "player1" : {
+              "name" : "Yib",
+              "seed" : 3
+            },
+            "player1PlaceHolderText" : "Winner of match 13",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Jr",
+              "seed" : 14
+            },
+            "player2PlaceHolderText" : "Winner of match 14",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 6,
+          "round" : 2,
+          "setIndex" : 13,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPYdmtFrCKJzmE1h_IL" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 9,
+            "nextLoserMatchNumber" : 36,
+            "nextLoserMatchSetIndex" : 11,
+            "nextMatchNumber" : 21,
+            "player1" : {
+              "name" : "Sabrina",
+              "seed" : 2
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Sabrina",
+              "seed" : 2
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 11,
+          "round" : 1,
+          "setIndex" : 23,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtI7rAh8djSXOES" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 20,
+            "nextLoserMatchNumber" : 44,
+            "nextLoserMatchSetIndex" : 11,
+            "nextMatchNumber" : 26,
+            "player1" : {
+              "name" : "Ebrahim",
+              "seed" : 5
+            },
+            "player1PlaceHolderText" : "Winner of match 7",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Simon",
+              "seed" : 12
+            },
+            "player2PlaceHolderText" : "Winner of match 8",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 4,
+          "round" : 2,
+          "setIndex" : 10,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPYdmtI7rAh8djSXOET" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 18,
+            "nextLoserMatchNumber" : 46,
+            "nextLoserMatchSetIndex" : 13,
+            "nextMatchNumber" : 25,
+            "player1" : {
+              "name" : "Patil",
+              "seed" : 8
+            },
+            "player1PlaceHolderText" : "Winner of match 3",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Poorvi",
+              "seed" : 9
+            },
+            "player2PlaceHolderText" : "Winner of match 4",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 3,
+          "round" : 2,
+          "setIndex" : 8,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPYdmtI7rAh8djSXOEU" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 19,
+            "nextLoserMatchNumber" : 45,
+            "nextLoserMatchSetIndex" : 12,
+            "nextMatchNumber" : 26,
+            "player1" : {
+              "name" : "Grace",
+              "seed" : 4
+            },
+            "player1PlaceHolderText" : "Winner of match 5",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Brandon",
+              "seed" : 13
+            },
+            "player2PlaceHolderText" : "Winner of match 6",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 4,
+          "round" : 2,
+          "setIndex" : 9,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPYdmtKmi5vPpQ4tNlj" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loser" : {
+              "name" : "John",
+              "seed" : 15
+            },
+            "loserPositionTop" : false,
+            "matchNumber" : 10,
+            "nextLoserMatchNumber" : 36,
+            "nextLoserMatchSetIndex" : 11,
+            "nextMatchNumber" : 21,
+            "player1" : {
+              "name" : "John",
+              "seed" : 15
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Sandy",
+              "seed" : 18
+            },
+            "player2PlaceHolderText" : "",
+            "player2Score" : 1,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Sandy",
+              "seed" : 18
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 11,
+          "round" : 1,
+          "setIndex" : 24,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPYdmtKmi5vPpQ4tNlk" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 21,
+            "nextLoserMatchNumber" : 43,
+            "nextLoserMatchSetIndex" : 10,
+            "nextMatchNumber" : 27,
+            "player1" : {
+              "name" : "Sabrina",
+              "seed" : 2
+            },
+            "player1PlaceHolderText" : "Winner of match 9",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "Sandy",
+              "seed" : 18
+            },
+            "player2PlaceHolderText" : "Winner of match 10",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 5,
+          "round" : 2,
+          "setIndex" : 11,
+          "state" : 3,
+          "stateName" : "awaiting"
+        },
+        "-LPYdmtL9WYCIOcN6Cy7" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 26,
+            "nextLoserMatchNumber" : 52,
+            "nextLoserMatchSetIndex" : 5,
+            "nextMatchNumber" : 29,
+            "player1PlaceHolderText" : "Winner of match 19",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 20",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 1,
+          "round" : 3,
+          "setIndex" : 4,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmtOO44qoEvmA3se" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 27,
+            "nextLoserMatchNumber" : 54,
+            "nextLoserMatchSetIndex" : 4,
+            "nextMatchNumber" : 30,
+            "player1PlaceHolderText" : "Winner of match 21",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 22",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 2,
+          "round" : 3,
+          "setIndex" : 5,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmtQSajN0JSutFOf" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 13,
+            "nextLoserMatchNumber" : 38,
+            "nextLoserMatchSetIndex" : 13,
+            "nextMatchNumber" : 23,
+            "player1" : {
+              "name" : "Yib",
+              "seed" : 3
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Yib",
+              "seed" : 3
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 13,
+          "round" : 1,
+          "setIndex" : 27,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtRMkEvQUQCMl8_" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 28,
+            "nextLoserMatchNumber" : 55,
+            "nextLoserMatchSetIndex" : 3,
+            "nextMatchNumber" : 30,
+            "player1PlaceHolderText" : "Winner of match 23",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 24",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 2,
+          "round" : 3,
+          "setIndex" : 6,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmtUBnh6LKSXWaqa" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 12,
+            "nextLoserMatchNumber" : 37,
+            "nextLoserMatchSetIndex" : 12,
+            "nextMatchNumber" : 22,
+            "player1" : {
+              "name" : "Andrei",
+              "seed" : 10
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Andrei",
+              "seed" : 10
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 12,
+          "round" : 1,
+          "setIndex" : 26,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtUBnh6LKSXWaqb" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 17,
+            "nextLoserMatchNumber" : 47,
+            "nextLoserMatchSetIndex" : 14,
+            "nextMatchNumber" : 25,
+            "player1" : {
+              "name" : "Jason",
+              "seed" : 1
+            },
+            "player1PlaceHolderText" : "Winner of match 1",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 2",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 3,
+          "round" : 2,
+          "setIndex" : 7,
+          "state" : 3,
+          "stateName" : "awaiting"
+        },
+        "-LPYdmtVkolMdsuUjtGo" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 16,
+            "nextLoserMatchNumber" : 39,
+            "nextLoserMatchSetIndex" : 14,
+            "nextMatchNumber" : 24,
+            "player1" : {
+              "name" : "Suji",
+              "seed" : 11
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Suji",
+              "seed" : 11
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 14,
+          "round" : 1,
+          "setIndex" : 30,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtVkolMdsuUjtGp" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 15,
+            "nextLoserMatchNumber" : 39,
+            "nextLoserMatchSetIndex" : 14,
+            "nextMatchNumber" : 24,
+            "player1" : {
+              "name" : "Marc",
+              "seed" : 6
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Marc",
+              "seed" : 6
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 14,
+          "round" : 1,
+          "setIndex" : 29,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtXGbSptWAsQuzY" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 11,
+            "nextLoserMatchNumber" : 37,
+            "nextLoserMatchSetIndex" : 12,
+            "nextMatchNumber" : 22,
+            "player1" : {
+              "name" : "Dipak",
+              "seed" : 7
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Dipak",
+              "seed" : 7
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 12,
+          "round" : 1,
+          "setIndex" : 25,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtZ8p4fuuTpFCHD" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 29,
+            "nextLoserMatchNumber" : 59,
+            "nextLoserMatchSetIndex" : 2,
+            "nextMatchNumber" : 31,
+            "player1PlaceHolderText" : "Winner of match 25",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 26",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 4,
+          "setIndex" : 1,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmtaq86dH_s29aoF" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 14,
+            "nextLoserMatchNumber" : 38,
+            "nextLoserMatchSetIndex" : 13,
+            "nextMatchNumber" : 23,
+            "player1" : {
+              "name" : "Jr",
+              "seed" : 14
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Jr",
+              "seed" : 14
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 13,
+          "round" : 1,
+          "setIndex" : 28,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPYdmtbhX4LRGPQsGo4" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 25,
+            "nextLoserMatchNumber" : 53,
+            "nextLoserMatchSetIndex" : 6,
+            "nextMatchNumber" : 29,
+            "player1PlaceHolderText" : "Winner of match 17",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 18",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 1,
+          "round" : 3,
+          "setIndex" : 3,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmtbhX4LRGPQsGo5" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 30,
+            "nextLoserMatchNumber" : 58,
+            "nextLoserMatchSetIndex" : 1,
+            "nextMatchNumber" : 31,
+            "player1PlaceHolderText" : "Winner of match 27",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 28",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 4,
+          "setIndex" : 2,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmtbhX4LRGPQsGo6" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 31,
+            "nextLoserMatchNumber" : 61,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 62,
+            "player1PlaceHolderText" : "Winner of match 29",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 30",
+            "player2Score" : 0,
+            "round" : 5,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 5,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPYdmtdB7hknun5h-EG" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 5,
+            "nextLoserMatchNumber" : 34,
+            "nextLoserMatchSetIndex" : 9,
+            "nextMatchNumber" : 19,
+            "player1" : {
+              "name" : "Grace",
+              "seed" : 4
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "Grace",
+              "seed" : 4
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 9,
+          "round" : 1,
+          "setIndex" : 19,
+          "state" : 1,
+          "stateName" : "complete"
+        }
+      },
+      "complete" : false,
+      "live" : true,
+      "players" : [ {
+        "name" : "Jason",
+        "seed" : 1
+      }, {
+        "name" : "Sabrina",
+        "seed" : 2
+      }, {
+        "name" : "Yib",
+        "seed" : 3
+      }, {
+        "name" : "Grace",
+        "seed" : 4
+      }, {
+        "name" : "Ebrahim",
+        "seed" : 5
+      }, {
+        "name" : "Marc",
+        "seed" : 6
+      }, {
+        "name" : "Dipak",
+        "seed" : 7
+      }, {
+        "name" : "Patil",
+        "seed" : 8
+      }, {
+        "name" : "Poorvi",
+        "seed" : 9
+      }, {
+        "name" : "Andrei",
+        "seed" : 10
+      }, {
+        "name" : "Suji",
+        "seed" : 11
+      }, {
+        "name" : "Simon",
+        "seed" : 12
+      }, {
+        "name" : "Brandon",
+        "seed" : 13
+      }, {
+        "name" : "Jr",
+        "seed" : 14
+      }, {
+        "name" : "John",
+        "seed" : 15
+      }, {
+        "name" : "Alberto",
+        "seed" : 16
+      }, {
+        "name" : "Sambu",
+        "seed" : 17
+      }, {
+        "name" : "Sandy",
+        "seed" : 18
+      } ],
+      "state" : "live",
+      "tournamentName" : "DNTG Tournament"
+    },
+    "-LPTV3c3l4fiU6wTIAmG" : {
+      "FinalBrackets" : {
+        "-LPd9C2_GtbQtnPryASR" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 6,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 7,
+            "player1PlaceHolderText" : "Winner of match 4",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 5",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 7,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 0,
+            "player1PlaceHolderText" : "Winner of match 6",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 6",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 1,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        }
+      },
+      "LoserBrackets" : {
+        "-LPd9C-i1PsptIl8uoym" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 4,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 5,
+            "player1PlaceHolderText" : "Loser of match 1",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 2",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 5,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 6,
+            "player1PlaceHolderText" : "Loser of match 3",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 4",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 1,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        }
+      },
+      "WinnerBrackets" : {
+        "-LPd9Bx4OaP2MVtGfSEp" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 2,
+            "nextLoserMatchNumber" : 4,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 3,
+            "player1" : {
+              "name" : "B",
+              "seed" : 2
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "C",
+              "seed" : 3
+            },
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 1,
+          "setIndex" : 2,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPd9BxGgN9NXhlX-lqZ" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 1,
+            "nextLoserMatchNumber" : 4,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 3,
+            "player1" : {
+              "name" : "A",
+              "seed" : 1
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "D",
+              "seed" : 4
+            },
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 1,
+          "setIndex" : 1,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPd9BxUkU9nYkJbjT0A" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 3,
+            "nextLoserMatchNumber" : 5,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 6,
+            "player1PlaceHolderText" : "Winner of match 1",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 2",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 2,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        }
+      },
+      "live" : true,
+      "players" : [ {
+        "name" : "A",
+        "seed" : 1
+      }, {
+        "name" : "B",
+        "seed" : 2
+      }, {
+        "name" : "C",
+        "seed" : 3
+      }, {
+        "name" : "D",
+        "seed" : 4
+      } ],
+      "state" : "live",
+      "tournamentName" : "Another tournament"
+    },
+    "tid123" : {
+      "FinalBrackets" : {
+        "-LPV37q89BlLySX5TUPX" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 30,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 31,
+            "player1PlaceHolderText" : "Winner of match 28",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 29",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 31,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 0,
+            "player1PlaceHolderText" : "Winner of match 30",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 30",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 1,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        }
+      },
+      "Logs" : {
+        "-LPV3SbOUWN6KEV_4r9D" : {
+          "actionSaveInFirebase" : true,
+          "appliedBy" : "Jason or Me",
+          "chainOfEvents" : [ {
+            "appliedBy" : "Jason or Me",
+            "date" : "2018-10-23T08:36:55.3849077+00:00",
+            "logSequence" : 2,
+            "matchNumber" : 9,
+            "message" : "8, winner from match 2 has advanced to winner's round 2",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 3,
+            "typeName" : "Add  winner from previous match."
+          }, {
+            "appliedBy" : "Jason or Me",
+            "chainOfEvents" : [ {
+              "appliedBy" : "Jason or Me",
+              "date" : "2018-10-23T08:36:55.3866945+00:00",
+              "logSequence" : 4,
+              "matchNumber" : 20,
+              "message" : "9, winner from match 16 has advanced to loser's round 2",
+              "newMatchStatus" : 3,
+              "newStateName" : "awaiting",
+              "pastMatchStatus" : 5,
+              "pastStateName" : "pending",
+              "type" : 3,
+              "typeName" : "Add  winner from previous match."
+            } ],
+            "date" : "2018-10-23T08:36:55.386689+00:00",
+            "logSequence" : 3,
+            "matchNumber" : 16,
+            "message" : "9,  has been sent to loser's round 1",
+            "newMatchStatus" : 2,
+            "newStateName" : "ready",
+            "pastMatchStatus" : 3,
+            "pastStateName" : "awaiting",
+            "type" : 4,
+            "typeName" : "Add loser from previous match."
+          } ],
+          "code" : 1,
+          "date" : "2018-10-23T08:36:55.3821597+00:00",
+          "logSequence" : 1,
+          "matchNumber" : 2,
+          "message" : "8 has beat 9",
+          "newMatchStatus" : 1,
+          "newStateName" : "complete",
+          "pastMatchStatus" : 2,
+          "pastStateName" : "ready",
+          "type" : 12,
+          "typeName" : "Match has selected a winner."
+        }
+      },
+      "LoserBrackets" : {
+        "-LPV37mTwhSAbL0VLjlX" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 19,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 23,
+            "player1PlaceHolderText" : "Loser of match 7",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 8",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 23,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 25,
+            "player1PlaceHolderText" : "Loser of match 9",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 19",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 2,
+          "round" : 1,
+          "setIndex" : 6,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37mVVjMyq6TlAeJn" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 28,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 29,
+            "player1PlaceHolderText" : "Winner of match 26",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 27",
+            "player2Score" : 0,
+            "round" : 5,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 29,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 30,
+            "player1PlaceHolderText" : "Loser of match 15",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 28",
+            "player2Score" : 0,
+            "round" : 6,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 3,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37m_7UkL6LKhss13" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 18,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 22,
+            "player1PlaceHolderText" : "Loser of match 5",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 6",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 22,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 25,
+            "player1PlaceHolderText" : "Loser of match 10",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 18",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 2,
+          "round" : 1,
+          "setIndex" : 5,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37mad71c1TGLH7Jg" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 25,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 27,
+            "player1PlaceHolderText" : "Winner of match 22",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 23",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 27,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 28,
+            "player1PlaceHolderText" : "Loser of match 14",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 25",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 2,
+          "setIndex" : 2,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37mcGTzYLbw0knbo" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 16,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 20,
+            "player1PlaceHolderText" : "Loser of match 1",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "9",
+              "seed" : 9
+            },
+            "player2PlaceHolderText" : "Loser of match 2",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "9",
+              "seed" : 9
+            },
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 20,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 24,
+            "player1PlaceHolderText" : "Loser of match 12",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "9",
+              "seed" : 9
+            },
+            "player2PlaceHolderText" : "Winner of match 16",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 1,
+          "round" : 1,
+          "setIndex" : 3,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37mcGTzYLbw0knbp" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 24,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 26,
+            "player1PlaceHolderText" : "Winner of match 20",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 21",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 26,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 28,
+            "player1PlaceHolderText" : "Loser of match 13",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 24",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 2,
+          "setIndex" : 1,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37metLa3VVnr8c5-" : {
+          "countOfMatches" : 2,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 17,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 21,
+            "player1PlaceHolderText" : "Loser of match 3",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Loser of match 4",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winnerPositionTop" : false
+          }, {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 21,
+            "nextLoserMatchNumber" : 0,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 24,
+            "player1PlaceHolderText" : "Loser of match 11",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 17",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 3,
+            "stateName" : "awaiting",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 1,
+          "round" : 1,
+          "setIndex" : 4,
+          "state" : 5,
+          "stateName" : "pending"
+        }
+      },
+      "WinnerBrackets" : {
+        "-LPV37iR_Gb9XzNLrwyw" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 3,
+            "nextLoserMatchNumber" : 17,
+            "nextLoserMatchSetIndex" : 4,
+            "nextMatchNumber" : 10,
+            "player1" : {
+              "name" : "4",
+              "seed" : 4
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "4",
+              "seed" : 4
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 4,
+          "round" : 1,
+          "setIndex" : 9,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPV37iS7n2K2nFiBq5v" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 7,
+            "nextLoserMatchNumber" : 19,
+            "nextLoserMatchSetIndex" : 6,
+            "nextMatchNumber" : 12,
+            "player1" : {
+              "name" : "3",
+              "seed" : 3
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "3",
+              "seed" : 3
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 6,
+          "round" : 1,
+          "setIndex" : 13,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPV37iTfVuSouK1pZly" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 10,
+            "nextLoserMatchNumber" : 22,
+            "nextLoserMatchSetIndex" : 5,
+            "nextMatchNumber" : 13,
+            "player1" : {
+              "name" : "4",
+              "seed" : 4
+            },
+            "player1PlaceHolderText" : "Winner of match 3",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "5",
+              "seed" : 5
+            },
+            "player2PlaceHolderText" : "Winner of match 4",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 1,
+          "round" : 2,
+          "setIndex" : 4,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPV37iZD-zT-8mrHVD4" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 8,
+            "nextLoserMatchNumber" : 19,
+            "nextLoserMatchSetIndex" : 6,
+            "nextMatchNumber" : 12,
+            "player1" : {
+              "name" : "6",
+              "seed" : 6
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "6",
+              "seed" : 6
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 6,
+          "round" : 1,
+          "setIndex" : 14,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPV37ib6KDgHcjSxhCZ" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 6,
+            "nextLoserMatchNumber" : 18,
+            "nextLoserMatchSetIndex" : 5,
+            "nextMatchNumber" : 11,
+            "player1" : {
+              "name" : "7",
+              "seed" : 7
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "7",
+              "seed" : 7
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 5,
+          "round" : 1,
+          "setIndex" : 12,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPV37idX9GnAqnguTpM" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : false,
+            "matchNumber" : 4,
+            "nextLoserMatchNumber" : 17,
+            "nextLoserMatchSetIndex" : 4,
+            "nextMatchNumber" : 10,
+            "player1" : {
+              "name" : "5",
+              "seed" : 5
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "5",
+              "seed" : 5
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 4,
+          "round" : 1,
+          "setIndex" : 10,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPV37igCAcG9wVkTKoL" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 5,
+            "nextLoserMatchNumber" : 18,
+            "nextLoserMatchSetIndex" : 5,
+            "nextMatchNumber" : 11,
+            "player1" : {
+              "name" : "2",
+              "seed" : 2
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "2",
+              "seed" : 2
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 5,
+          "round" : 1,
+          "setIndex" : 11,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPV37iiMGZ6PueOzFaV" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 13,
+            "nextLoserMatchNumber" : 26,
+            "nextLoserMatchSetIndex" : 2,
+            "nextMatchNumber" : 15,
+            "player1PlaceHolderText" : "Winner of match 9",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 10",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 3,
+          "setIndex" : 1,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37ij7jL6EEM868Xe" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 1,
+            "nextLoserMatchNumber" : 16,
+            "nextLoserMatchSetIndex" : 3,
+            "nextMatchNumber" : 9,
+            "player1" : {
+              "name" : "1",
+              "seed" : 1
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "1",
+              "seed" : 1
+            },
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 3,
+          "round" : 1,
+          "setIndex" : 7,
+          "state" : 1,
+          "stateName" : "complete"
+        },
+        "-LPV37ikrH5GA63ptJFD" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loser" : {
+              "name" : "9",
+              "seed" : 9
+            },
+            "loserPositionTop" : false,
+            "matchNumber" : 2,
+            "nextLoserMatchNumber" : 16,
+            "nextLoserMatchSetIndex" : 3,
+            "nextMatchNumber" : 9,
+            "player1" : {
+              "name" : "8",
+              "seed" : 8
+            },
+            "player1PlaceHolderText" : "",
+            "player1Score" : 1,
+            "player2" : {
+              "name" : "9",
+              "seed" : 9
+            },
+            "player2PlaceHolderText" : "",
+            "player2Score" : 0,
+            "round" : 1,
+            "state" : 1,
+            "stateName" : "complete",
+            "station" : 0,
+            "winner" : {
+              "name" : "8",
+              "seed" : 8
+            },
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 3,
+          "round" : 1,
+          "setIndex" : 8,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPV37ikrH5GA63ptJFE" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 11,
+            "nextLoserMatchNumber" : 21,
+            "nextLoserMatchSetIndex" : 4,
+            "nextMatchNumber" : 14,
+            "player1" : {
+              "name" : "2",
+              "seed" : 2
+            },
+            "player1PlaceHolderText" : "Winner of match 5",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "7",
+              "seed" : 7
+            },
+            "player2PlaceHolderText" : "Winner of match 6",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 2,
+          "round" : 2,
+          "setIndex" : 5,
+          "state" : 2,
+          "stateName" : "ready"
+        },
+        "-LPV37il5GBev5NmiVZh" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 15,
+            "nextLoserMatchNumber" : 29,
+            "nextLoserMatchSetIndex" : 0,
+            "nextMatchNumber" : 30,
+            "player1PlaceHolderText" : "Winner of match 13",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 14",
+            "player2Score" : 0,
+            "round" : 4,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : -1,
+          "round" : 4,
+          "setIndex" : 0,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37ioOI2gNnHXUp1T" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 9,
+            "nextLoserMatchNumber" : 23,
+            "nextLoserMatchSetIndex" : 6,
+            "nextMatchNumber" : 13,
+            "player1" : {
+              "name" : "1",
+              "seed" : 1
+            },
+            "player1PlaceHolderText" : "Winner of match 1",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "8",
+              "seed" : 8
+            },
+            "player2PlaceHolderText" : "Winner of match 2",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : true
+          } ],
+          "nextSetIndex" : 1,
+          "round" : 2,
+          "setIndex" : 3,
+          "state" : 3,
+          "stateName" : "awaiting"
+        },
+        "-LPV37ipHh1LIhrk3tDl" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 14,
+            "nextLoserMatchNumber" : 27,
+            "nextLoserMatchSetIndex" : 1,
+            "nextMatchNumber" : 15,
+            "player1PlaceHolderText" : "Winner of match 11",
+            "player1Score" : 0,
+            "player2PlaceHolderText" : "Winner of match 12",
+            "player2Score" : 0,
+            "round" : 3,
+            "state" : 5,
+            "stateName" : "pending",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 0,
+          "round" : 3,
+          "setIndex" : 2,
+          "state" : 5,
+          "stateName" : "pending"
+        },
+        "-LPV37iqS3kEo5gVrkUN" : {
+          "countOfMatches" : 1,
+          "matches" : [ {
+            "console" : 0,
+            "loserPositionTop" : true,
+            "matchNumber" : 12,
+            "nextLoserMatchNumber" : 20,
+            "nextLoserMatchSetIndex" : 3,
+            "nextMatchNumber" : 14,
+            "player1" : {
+              "name" : "3",
+              "seed" : 3
+            },
+            "player1PlaceHolderText" : "Winner of match 7",
+            "player1Score" : 0,
+            "player2" : {
+              "name" : "6",
+              "seed" : 6
+            },
+            "player2PlaceHolderText" : "Winner of match 8",
+            "player2Score" : 0,
+            "round" : 2,
+            "state" : 2,
+            "stateName" : "ready",
+            "station" : 0,
+            "winnerPositionTop" : false
+          } ],
+          "nextSetIndex" : 2,
+          "round" : 2,
+          "setIndex" : 6,
+          "state" : 2,
+          "stateName" : "ready"
+        }
+      },
+      "live" : true,
+      "players" : [ {
+        "name" : "1",
+        "seed" : 1
+      }, {
+        "name" : "2",
+        "seed" : 2
+      }, {
+        "name" : "3",
+        "seed" : 3
+      }, {
+        "name" : "4",
+        "seed" : 4
+      }, {
+        "name" : "5",
+        "seed" : 5
+      }, {
+        "name" : "6",
+        "seed" : 6
+      }, {
+        "name" : "7",
+        "seed" : 7
+      }, {
+        "name" : "8",
+        "seed" : 8
+      }, {
+        "name" : "9",
+        "seed" : 9
+      } ],
+      "state" : "live",
+      "tournamentName" : "New Test"
+    }
+  }
+}

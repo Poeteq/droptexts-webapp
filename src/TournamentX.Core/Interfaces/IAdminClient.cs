@@ -7,6 +7,6 @@ namespace TournamentX.Core.Interface
 {
     public interface IAdminClient
     {
-        Response<TxSessionCredentials> Login(AdminLoginRequest request);
+        Response<UserIdentity> Login(AdminLoginRequest request);
     }
 }
