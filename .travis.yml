@@ -12,9 +12,9 @@ addons:
     packages:
       - docker-ce
 before_script:
-  - npm install -g @angular/cli
+  - (cd /src/TournamentX.Web; npm install -g @angular/cli) 
 script:
-  - ng build --prod --aot
+  - (cd /src/TournamentX.Web; ng build --prod --aot) 
   - chmod +x ./deploy-envs.sh
   - chmod +x ./scripts/build.sh
   - chmod +x ./scripts/deploy.sh
