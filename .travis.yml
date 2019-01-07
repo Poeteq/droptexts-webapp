@@ -12,6 +12,7 @@ addons:
     packages:
       - docker-ce
 before_script:
+  - ls
   - (cd /src/TournamentX.Web; npm install -g @angular/cli) 
 script:
   - (cd /src/TournamentX.Web; ng build --prod --aot) 

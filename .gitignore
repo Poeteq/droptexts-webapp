@@ -239,7 +239,6 @@ _Pvt_Extensions
 src/TournamentX.Web/ClientApp/dist
 src/TournamentX.Web/ClientApp/tmp
 src/TournamentX.Web/ClientApp/out-tsc
-src/TournamentX.Web/wwwroot
 # dependencies
 **/node_modules
 
