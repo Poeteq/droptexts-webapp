@@ -11,7 +11,10 @@ addons:
   apt:
     packages:
       - docker-ce
+before_script:
+  - npm install -g @angular/cli
 script:
+  - ng build --prod --aot
   - chmod +x ./deploy-envs.sh
   - chmod +x ./scripts/build.sh
   - chmod +x ./scripts/deploy.sh
