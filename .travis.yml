@@ -1,8 +1,8 @@
 language: csharp
 os: linux
-dist: trusty
 sudo: required
-dotnet: 2.2.0
+dist: xenial
+dotnet: 2.2
 mono: none
 env: DOTNETCORE=1
 services:
