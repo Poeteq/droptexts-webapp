@@ -20,6 +20,31 @@ export class HttpService
         });
     }
 
+    bulkSendToContacts(request): Promise<any>
+    {
+        let httpUrl = `api/message/contacts/send`;
+        return this.http.post({
+            url: httpUrl,
+            body: request
+        });
+    }
+
+    getAllContacts(): Promise<any>
+    {
+        let httpUrl = `api/contacts/all`;
+        return this.http.get({
+           url: httpUrl
+        });
+    }
+
+    deleteFile(fileName): Promise<any>
+    {
+        let httpUrl = `api/contacts/${fileName}`;
+        return this.http.delete({
+           url: httpUrl
+        });
+    }
+
     // -----------------------------------------------------------------------------------------------------
     // @ Tournament APIs
     // -----------------------------------------------------------------------------------------------------

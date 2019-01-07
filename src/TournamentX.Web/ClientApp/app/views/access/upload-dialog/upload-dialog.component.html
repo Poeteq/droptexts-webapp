@@ -1,0 +1,74 @@
+<div id="admin-dialog">
+    <div class="dialog-content-wrapper">
+        <!-- <mat-toolbar matDialogTitle class="tx-accent-bg m-0">
+            <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+                <span class="title dialog-title">Upload Recipients List Text File</span>
+                <button mat-icon-button (click)="dialogRef.close()" aria-label="Close dialog">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <input type="file" #file style="display: none" (change)="onFilesAdded()" multiple />
+        <div class="container" fxLayout="column" fxLayoutAlign="space-evenly stretch">
+            <h1 mat-dialog-title>Upload Files</h1>
+            <div>
+                <button [disabled]="uploading || uploadSuccessful" mat-raised-button color="primary" class="add-files-btn"
+                    (click)="addFiles()">
+                    Add Files
+                </button>
+            </div>
+
+            <mat-dialog-content fxFlex>
+                <mat-list>
+                    <mat-list-item *ngFor="let file of files">
+                        <h4 mat-line>{{file.name}}</h4>
+                        <mat-progress-bar *ngIf="progress" mode="determinate" [value]="progress[file.name].progress | async"></mat-progress-bar>
+                    </mat-list-item>
+                </mat-list>
+            </mat-dialog-content>
+            <div mat-dialog-actions class="m-0 p-16" fxLayout="row" fxLayoutAlign="end center">
+                <button mat-button class="save-button btn-primary-tx square" (click)="closeDialog()" aria-label="okay">
+                    {{primaryTextButton}}
+                </button>
+            </div>
+        </div> -->
+        <mat-toolbar matDialogTitle class="tx-accent-bg m-0">
+            <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+                <span class="title dialog-title">Upload Recipients List Text File</span>
+                <button mat-icon-button (click)="dialogRef.close()" aria-label="Close dialog">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <!-- <mat-form-field class="example-full-width">
+            <textarea matInput [(ngModel)]="message" placeholder="Leave a comment"></textarea>
+        </mat-form-field> -->
+        <!-- <input #file type="file" multiple (change)="upload(file.files)" /> -->
+        <input type="file" #file style="display: none" (change)="onFilesAdded()" multiple />
+        <div class="container" fxLayout="column" fxLayoutAlign="space-evenly stretch">
+            <h1 mat-dialog-title>Upload Files</h1>
+            <div>
+                <button [disabled]="uploading || uploadSuccessful" mat-raised-button color="primary" class="add-files-btn"
+                    (click)="addFiles()">
+                    Add Files
+                </button>
+            </div>
+
+            <!-- This is the content of the dialog, containing a list of the files to upload -->
+            <div mat-dialog-content class="p-24 pb-0 m-0">
+                <mat-list>
+                    <mat-list-item *ngFor="let file of files">
+                        <h4 mat-line>{{file.name}}</h4>
+                        <mat-progress-bar *ngIf="progress" mode="determinate" [value]="progress[file.name].progress | async"></mat-progress-bar>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+
+            <!-- This are the actions of the dialog, containing the primary and the cancel button-->
+            <mat-dialog-actions class="actions">
+                <button *ngIf="showCancelButton" mat-button mat-dialog-close>Cancel</button>
+                <button mat-raised-button color="primary" [disabled]="!canBeClosed" (click)="closeDialog()">{{primaryButtonText}}</button>
+            </mat-dialog-actions>
+        </div>
+    </div>
+</div>
